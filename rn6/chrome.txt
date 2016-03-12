@@ -1,0 +1,75 @@
+  chrome:// отжыг 
+
+  ALiEN Assault 
+
+    Эта заметка, отнюдь не претендующая на какие-то глобальные открытия, тем не
+менее может оказаться полезной пользователям Firefox и аналогичных программ.
+    Суть  заключается  в  том,  что  в  Firefox  используется адресация окон по
+интерфейсу  chrome,  что может быть использовано для легкого повышения простоты
+управления  браузером.  Адреса  окон можно получить, используя DOM Inspector, и
+добавить  наиболее  полезные  в  закладки,  чтобы  не тратить время на доступ к
+нужному подменю.
+
+  Например, chrome адрес основного окна настроек выглядит как 
+  chrome://browser/content/preferences/preferences.xul (в версиях до 1.5 адрес
+  другой - chrome://browser/content/pref/pref.xul)
+    В  моем  случае  он забит в throbber (анимированную иконку в верхнем правом
+углу,  как правило ссылающуюся на оффсайт). Модифицировать throbber можно через
+about:config  - browser.throbber.url То же самое окно about:config имеет chrome
+адрес chrome://global/content/config.xul .
+
+  Вот небольшой перечень адресов разных окон:
+     
+chrome://mozapps/content/extensions/extensions.xul - темы
+
+chrome://inspector/content/inspector.xul - DOM Inspector
+
+chrome://mozapps/content/downloads/downloads.xul - список закачек. В виде
+отдельной закладки он гораздо удобнее, чем по умолчанию в виде небольшого
+диалогового окна.
+
+chrome://browser/content/preferences/downloadactions.xul - здесь можно
+назначить обращение с разными MIME-типами файлов. 
+
+chrome://browser/content/preferences/cookies.xul
+просмотр cookies
+
+chrome://browser/content/preferences/connection.xul 
+настройка прокси
+
+chrome://global/content/console.xul
+консоль, отражающая сообщения браузера
+
+chrome://browser/content/preferences/colors.xul
+цветовое оформление
+
+chrome://browser/content/preferences/languages.xul 
+языковое меню
+
+chrome://browser/content/preferences/fonts.xul 
+шрифты
+
+chrome://global/content/printdialog.xul
+диалог печати
+
+chrome://global/content/printPageSetup.xul 
+задание параметров страницы при печати
+
+chrome://mozapps/content/update/history.xul 
+история обновлений
+
+chrome://pippki/content/certManager.xul 
+управление сертификатами безопасности
+
+chrome://pippki/content/crlManager.xul 
+управление CRL
+
+chrome://mozapps/content/preferences/ocsp.xul
+проверка сертификатов по OCSP (Online Certificate Status Protocol)
+
+chrome://pippki/content/device_manager.xul 
+управление средствами авторизации.
+
+Интересующимся Firefox стоит обратить внимание на книги
+Mel Reyes (автор расширения Local Install) -  Hacking Firefox
+Nigel McFarlane - Firefox Hacks

@@ -1,0 +1,738 @@
+Сетевое Время. Подборка информации.
+
+by Zany Ross
+
+В этом  файле находится  сборник информации  по теме  - Сетевое Время.
+Почему сборник  а не  ещё одна  статья? Потому  что по данному вопросу
+информации достаточно, просто её трудно найти, - потому и новую статью
+писать - зря время тратить. сетевое. ;-)
+
+
+
+Источник : http://rfc2001.city.tomsk.net/Broad/utcgmt.htm
+
+Так как  радиосигналы могут  пересечь многочисленные  часовые пояса  и
+международную линию даты,  необходим некоторый всемирный  стандарт для
+определения  времени  и  даты.  Этим  стандартом  является coordinated
+universal  time  или  сокращ№нно  UTC.  Прежде  он  был  известен  как
+Гринвичское  среднее  время (GMT).  Другие  сокращения, относящиеся  к
+этому стандарту - "universal time" и "world time." 
+
+UTC  используется  международными  коротковолновыми  вещателями  в  их
+частотных  расписаниях и  программных планах.  Радиолюбители-эфирщики,
+слушатели-коротковолнивики,  военные,  и  сервисные  радиослужбы также
+широко  используют UTC.  Гринвичское среднее  время было  основано на
+времени  на  нулевом  меридиане  ,  который  проходит  через   Гринвич
+(Англия). GMT стал мировым временем  и стандартом даты, потому что  он
+использовался  Британским  королевским  морским  и  торговым  флотом в
+течение девятнадцатого столетия. Сегодня по UTC работают  прецизионные
+атомные  часы,  коротковолновые  сигналы  времени  и  спутники,  чтобы
+гарантировать   надежность  и   точность  стандарта   для  научных   и
+навигационных целей.  Несмотря на  уточнения в  точности, стандарт UTC
+использует те же принципы, что и в GMT.
+
+UTC использует 24-часовую  систему системы обозначения  времени. "1:00
+AM"  в  UTC выражается  как  0100 и  объявляется  "zero one  hundred".
+Пятнадцать минут  второго выражаются  как 0115;  тридцать восемь минут
+второго  -  0138   (обычно  произносится  "zero   one  thirty-eight").
+Следующая минута после 0159 - 0200. Следующая минута после 1259 - 1300
+(произносится "thirteen hundred"). Это продолжается до 2359. Следующая
+минута - 0000 ("zero hundred") - начало новых суток.
+
+Главный источник замешательства при  использовании UTC - то,  что дата
+также изменяется  в соответствии  с UTC.  Например, программу, которая
+согласно расписанию выходит  в пятницу в  2300 UTC в  Томске вы можете
+услышать в субботу в 6.00 м.в.. И обратно, если вы приняли программу в
+Томске  в   понедельник  4.30   м.в.,  в   рапорте  следует  указывать
+"Воскресенье, 2000 UTC". 
+
+
+
+http://www.krugosvet.ru/articles/03/1000399/1000399a2.htm
+
+Поправки  к  всемирному  времени.  Сигналы  точного  времени  по радио
+передаются  в  системе координированного  времени  (UTC), аналогичного
+среднему гринвичскому  времени. Однако  в системе  UTC ход  времени не
+вполне равномерен, там возникают отклонения  с периодом ок. 1 года.  В
+соответствии  с  международным  соглашением  в  передаваемые   сигналы
+вводится поправка, учитывающая эти отклонения. 
+
+На станциях  службы времени  определяется местное  звездное время,  по
+которому  вычисляется  местное  среднее  солнечное  время.   Последнее
+преобразуется  в  единое  всемирное  время  (UT0)  путем   прибавления
+соответствующего   значения,   принятого  для   долготы,   на  которой
+расположена  станция  (к  западу  от  Гринвичского  меридиана).  Таким
+образом устанавливается координированное всемирное время. 
+
+С 1892 известно,  что ось земного  эллипсоида испытывает колебания  по
+отношению к оси вращения Земли с периодом примерно 14 мес.  Расстояние
+между этими  осями, измеренное  на любом  полюсе, составляет  ок. 9 м.
+Следовательно,  долгота  и  широта  любой  точки  на  Земле испытывают
+периодические вариации. Для получения более однородной шкалы времени в
+вычисленную для конкретной станции  величину UT0 вводится поправка  за
+изменение долготы,  которая может  достигать 30  мс (в  зависимости от
+положения станции); таким образом получается время UT1.
+
+Скорость  вращения  Земли подвержена  сезонным  изменениям, вследствие
+которых время, измеряемое вращением планеты, оказывается то «впереди»,
+то  «позади»  звездного (эфемеридного)  времени,  причем отклонения  в
+течение года могут достигать 30  мс. UT1, в которое внесена  поправка,
+учитывающая  сезонные  изменения,  обозначается  UT2  (предварительное
+равномерное,  или  квазиравномерное,   всемирное  время).  Время   UT2
+определяется  на основе  средней скорости  вращения Земли,  но на  нем
+сказываются   долгопериодные   изменения   этой   скорости.  Поправки,
+позволяющие  рассчитать   время  UT1   и  UT2   по  UТ0,   вводятся  в
+унифицированной  форме  Международным  бюро  времени,  находящимся   в
+Париже. 
+
+
+http://www.moscowaleks.narod.ru/galaxy40.html
+
+Кандидат физико-математических наук Л. В. РЫХЛОВА 
+
+Что такое "координированное время"?
+
+Вероятно,  многим   приходилось  слышать   слова  "всемирное   время",
+"эфемеридное  время",  "атомное  время".  Недавно  появилось   понятие
+"координированного",   или,  как   иногда  говорят,   "согласованного"
+времени. Для чего нужно столько разных времен? Разные названия времени
+означают  лишь  различные  методы его  определения.  Само  время течет
+независимо  от способов  его измерения,  подобно тому  как расстояние
+между Москвой и Ленинградом  остается неизменным, хотя, выражая  его в
+километрах или милях, мы получаем разные величины.
+
+Время регулирует повседневную  жизнь человека. Но  оно еще и  отражает
+динамические свойства материи: изучение любых движений или изменений в
+окружающем  нас   мире  немыслимо   без  непрерывной,   равномерной  и
+достаточно точной шкалы времени. В соответствии с этим перед наукой  и
+практикой  возникают следующие  задачи: во-первых,  выбрать удобные  и
+точные  единицы  счета времени,  основанные  на каком-либо  стабильном
+периодическом  природном  процессе,   и  установить  систему   отсчета
+времени, или,  как говорят  иначе, шкалу  времени; во-вторых,  создать
+счетчики равномерного времени и аппаратуру для их сличения; в-третьих,
+научиться  сопоставлять  показания  этих  счетчиков  с  тем  природным
+процессом, который лежит в основе той или иной шкалы времени. В статье
+мы рассмотрим только первую из перечисленных проблем.
+
+ТРИ ШКАЛЫ ВРЕМЕНИ.
+
+В астрономии  исторически сложились  три шкалы  для измерения времени.
+Вращением Земли вокруг оси задается шкала всемирного времени. Вращение
+Земли и смена дня и ночи определяют самую естественную единицу времени
+-  сутки.  Сутки  -  это  промежуток  времени  между последовательными
+верхними кульминациями на данном меридиане одной из трех фиксированных
+точек небесной сферы:  точки весеннего равноденствия,  центра видимого
+диска  Солнца  (истинного  Солнца)  либо  фиктивной  точки, равномерно
+движущейся по экватору и называемой "средним солнцем". В  соответствии
+с  этим  сутки  бывают   звездные,  истинные  солнечные  или   средние
+солнечные. Начальным  меридианом при  всех измерениях  времени с  1884
+года считается меридиан Гринвичской обсерватории, а среднее  солнечное
+время  на   меридиане  Гринвича   называется  всемирным   временем  UT
+(Universal Time). Земной шар поделен на 24 часовых пояса шириной  15°,
+и каждому поясу приписано время, отличающееся на целое число часов  от
+всемирного.   Всемирное   время   определяется   из    астрономических
+наблюдений,   которые   ведутся   специальными   службами   на  многих
+обсерваториях  мира.  Но  службы  времени  расположены  на  Земле,  и,
+следовательно, результаты их наблюдений зависят от состояния и свойств
+вещества земных недр, от тектонических движений, приливов,  циркуляции
+атмосферных масс. Иными словами, продолжительность суток изменяется  в
+зависимости  от   геофизических  явлений,   происходящих  внутри,   на
+поверхности  и  в атмосфере  Земли.  Часть этих  процессов  приводит к
+непредвиденным  изменениям  в положении  оси  вращения Земли,  другие 
+-  порождают неравномерности  в ее  суточном вращении.  Если меняется
+положение оси вращения Земли, то меняется и положение земных  полюсов,
+а  значит,  координаты  точек земной  поверхности.  Очевидно,  что эти
+изменения вносят "ошибку" в определяемое из астрономических наблюдений
+время.  Сезонные   перемещения  воздушных   масс  в   атмосфере  Земли
+повторяются из  года в  год более  или менее  регулярно. Они  вызывают
+годовые вариации угловой скорости вращения Земли: замедление  вращения
+весной  и  ускорение -  в  конце лета.  Тормозящее  действие лунных  и
+солнечных приливов  приводит к  вековому замедленного  вращения Земли.
+Нерегулярные,  или  случайные, флуктуации  скорости  вращения пока  не
+получили четкой физической интерпретации.
+
+В зависимости от  того, какие процессы,  влияющие на шкалу  всемирного
+времени,  учитываются  при  ее  построении,  различаются  три  системы
+всемирного времени: 
+
+UTO - всемирное  время, полученное непосредственно  из астрономических
+наблюдений.  Оно  не  универсально,  поскольку  зависит  от  положения
+обсерватории на поверхности Земли; 
+
+UT1  -  всемирное  время,  в  которое  внесены  поправки,  связанные с
+изменением долгот обсерваторий вследствие движения полюсов; 
+
+UT2 -  всемирное время,  в котором  учтены также  сезонные вариации  в
+скорости вращения  Земли. Они  вычисляются на  основании исследований,
+выполненных   в   предыдущие   годы.   Поэтому   время   UT2  называют
+предварительным  равномерным  или  квазиравномерным.  UT2  -  наиболее
+возможное  приближение  к  равномерной  шкале  времени,  которое можно
+получить из наблюдений суточного движения звезд. 
+
+Данных  какой-нибудь  одной   службы  времени  еще   недостаточно  для
+определения  шкалы  всемирного времени,  поскольку  эти данные  сильно
+искажены  ошибками  самих  астрономических  наблюдений.  Нужно  срочно
+сравнить  материалы  служб времени,  привести  их к  единой  системе и
+осреднить. В нашей  стране эта работа  возложена на Всесоюзный  научно
+-исследовательский  институт  физико-технических  и   радиотехнических
+измерений Комитета стандартов  при Совете Министров.  Шкала всемирного
+времени Государственной службы времени  и частоты создается на  основе
+результатов наблюдений  21 службы  времени (в  том числе  девяти служб
+времени социалистических стран).
+
+Наша  страна  участвует  и  в  работе  Международного  бюро   времени,
+образованного в 1920 году в  Париже. В начале своей деятельности  бюро
+использовало результаты  наблюдений всего  восьми служб  времени, а  в
+1976 году  шкала UT1  была определена  по материалам  наблюдений на 82
+астрономических инструментах более 50 служб времени. Шкала  всемирного
+времени СССР практически совпадает  со шкалой UT1 Международного  бюро
+времени.
+
+Шкалу времени UT2 можно  считать достаточно равномерной на  протяжении
+года  или   нескольких  лет.   Но  через   несколько  десятилетий   ее
+равномерность   будет   нарушена   вследствие   медленных   вековых  и
+нерегулярных  изменений  в  скорости  вращения  Земли.  Поэтому  шкала
+всемирного времени непригодна для построения теорий движения планет  и
+их  спутников.  В  уравнения  движения  небесных  тел  как независимый
+аргумент входит эфемеридное время ЕТ (Ephemeris Time).  Это-равномерно
+текущее время ньютоновой механики. Шкала эфемеридного времени задается
+орбитальным  движением   тел  Солнечной   системы.  Основная   единица
+измерения эфемеридного времени-тропический год в фундаментальную эпоху
+1900,   январь   0,   12  ч,   то   есть   промежуток  времени   между
+последовательными прохождениями центра истинного Солнца через  среднюю
+точку  весеннего  равноденствия  в   эпоху  1900,  январь  0,   12  ч.
+Эфемеридная секунда равна  Vsi 556 925,  9477 части тропического  года
+для начальной  эпохи. Эфемеридные  сутки содержат  86 400  эфемеридных
+секунд.
+
+Эфемеридное время определяется из долголетних наблюдений за  движением
+Солнца, Луны и планет, из наблюдений покрытий звезд Луною, затмений  и
+т. п.  Эфемеридный меридиан  занимает такое  положение в пространстве,
+которое  занимал  бы  Гринвичский  при  условии,  что  Земля вращается
+равномерно с угловой скоростью, равной одному полному обороту за  одни
+эфемеридные  сутки. Эфемеридный  меридиан отстоит  от Гринвичского  на
+угловом расстоянии ET-UT.
+
+Так   как   предвычисленные  положения   небесных   тел  привязаны   к
+эфемеридному   времени,  а   наблюдаемые  -   к  всемирному   времени,
+сопоставление  тех  и других  положений  позволяет вычислить  разность
+эфемеридного  и  всемирного  времени.  Различие  между  этими  шкалами
+объясняется в основном вековым  замедлением вращения Земли. С  1903 по
+1977 год это  различие достигло почти  49 с. Точные  значения разности
+эфемеридного и всемирного времени  могут быть получены лишь  с большим
+опозданием для прошедших моментов времени.
+
+С  появлением  молекулярных  и  атомных  стандартов  частоты  возникла
+принципиально новая,  не зависящая  от вращения  Земли и  движения тел
+Солнечной  системы, физическая  шкала атомного  времени. В  1967 году
+Международный  комитет  мер  и  весов  постановил  принять  за единицу
+измерения времени в Международной системе единиц (СИ) атомную секунду.
+Она  была определена  как "продолжительность  9 192631  770 колебаний
+излучения, соответствующего резонансной  частоте перехода между  двумя
+уровнями сверхтонкой  структуры основного  состояния атома  цезия-133,
+при  отсутствии   возмущений  от   внешних  полей".   Атомная  секунда
+выбиралась таким образом, чтобы ее продолжительность была  максимально
+близка к продолжительности эфемеридной. Атомная секунда  соответствует
+эфемеридной с  точностью ±2*10^-9,  что было  установлено в результате
+сравнения шкал эфемеридного и атомного времени на протяжении пяти лет.
+Шкала  атомного  времени  чрезвычайно  стабильна,  равномерна  и легко
+воспроизводима, однако выбор секунды  атомного времени условен, как  и
+начало счета  времени в  атомной шкале.  Если в  основе шкалы  времени
+лежит  вращение Земли,  то моменты  событий устанавливаются  по числу
+циклов  (и  долей  циклов)  видимого  перемещения  Солнца.  Эти  циклы
+отсчитываются от некоторого условного начала, например, от  "рождества
+Христова". Шкала атомного времени также устанавливается путем подсчета
+числа  циклических  колебаний сигнала,  частота  которого находится  в
+резонансе  с частотой  излучения определенных  атомов. Различие  между
+этими шкалами заключается в  том, что периоды колебаний  атомных часов
+несравненно  короче ежедневных  циклов видимого  перемещения Солнца  и
+требуют более  сложных устройств  для подсчета  периодов. Показания же
+атомных  часов можно  снять во  много тысяч  раз точнее  и легче,  чем
+показания земных часов. Атомное  время обычно отсчитывается от  начала
+того года, когда атомные часы вводятся в эксплуатацию. Сейчас  приняты
+два унифицированных обозначения  атомного времени: TA(i)-  независимое
+местное атомное время, вычисленное i-той лабораторией по своим атомным
+часам; TAI (Time  Atomic International)- международная  шкала атомного
+времени.
+
+Независимые национальные шкалы или шкалы отдельных обсерваторий  TA(i)
+появились во второй половине  50-х годов. Национальная шкала  атомного
+времени  Советского  Союза TA(SU)  существует  с 1962  года.  В основе
+Государственного  эталона  времени  и  частоты  лежит  цезиевый  репер
+частоты, который воспроизводит единицу частоты с ошибкой менее 10^-12.
+Эталон периодически проверяется. Он  отделен от группы атомных  часов,
+выверенных так,  чтобы их  ход соответствовал  колебаниям эталона. Эти
+часы и задают рабочую шкалу атомного времени. Поскольку рабочих  часов
+несколько, исключается  возможность "потери"  шкалы атомного  времени.
+Синхронизация  атомных эталонов  частоты разных  стран и  обсерваторий
+осуществляется  несколькими   способами:  по   телевизионным  сигналам
+точного  времени  (однако телевизионная  сеть  охватывает ограниченную
+территорию);   по   сигналам   времени,   транслируемым   американской
+радионавигационной   системой    Лоран-С   или    системой   советских
+радионавигационных станций;  по сигналам,  передаваемым искусственными
+спутниками Земли,  которые служат  ретрансляторами стандартов  частоты
+или  оборудованы  собственными  бортовыми  часами.  Наконец,   атомные
+стандарты времени  и частоты  перевозят, например,  самолетами. В этом
+случае  шкалы времени  двух обсерваторий  можно сравнивать  с ошибкой
+около  10^-7  с,  если стабильность  перевозимого  стандарта  10^-12 и
+длительность транспортировки около 10^5 с.
+
+Все  это  позволило  создать  чрезвычайно  стабильную  и  высокоточную
+Международную  шкалу  атомного   времени  TAI,  которая   основана  на
+постоянной секунде  в системе  СИ, реализованной  на уровне  моря. Эта
+шкала  формируется   Международным  бюро   времени.  Она   сохраняется
+непрерывно с 1 января 1958  года и является опорной для  синхронизации
+часов во всем мире, для исследования движения небесных тел и  изучения
+неравномерности вращения Земли. Точность Международной шкалы  атомного
+времени составляет 10^-13 секунды СИ на уровне моря.
+
+Первоначально  Международное  бюро   времени  строило  шкалу   TAI  по
+национальным шкалам времени Великобритании, Швейцарии и США, каждая из
+которых основывалась не  менее чем на  трех атомных эталонах  частоты.
+Позднее  к  созданию TAI  были  привлечены семь  местных  атомных шкал
+TA(i),  в  том   числе  Канады,  ФРГ,   Франции.  С  июля   1973  года
+Международное бюро времени вычисляет TAI, опираясь непосредственно  на
+показания отдельных атомных часов.  В 1974 году при  формировании этой
+шкалы  использовались  показания  59  атомных  часов,  в  1975   году 
+- показания 94 часов шестнадцати лабораторий.
+
+КАК СОГЛАСОВАТЬ ШКАЛЫ?
+
+Атомные часы  позволили создать  очень стабильную  и равномерную шкалу
+времени. Но  продолжительность суток,  как мы  уже говорили, меняется,
+поэтому ход  атомных часов  не совпадает  с ходом  земных. Расхождение
+между атомной и всемирной шкалами времени составляет примерно  секунду
+в год. Аналогичная проблема существует и в календарном счете  времени.
+Год не равен целому числу суток, но мы хотим, чтобы год "шел в ногу" с
+календарем. Прибавляя в високосном  году один день к  календарю, можно
+поддерживать  соответствие  между  календарем  и  временами  года. Для
+согласования физической  шкалы атомного  времени TAI  вначале изменяли
+продолжительность секунды. Секунда была "резиновой", но это  оказалось
+неудобно,  поэтому была  введена шкала  координированного времени  UTC
+(Universal   Time   Coordination),    включающая   в   себя    понятие
+"дополнительной секунды".
+
+С  1 января  1972 года  большая часть  программ радиосигналов  точного
+времени стала передаваться в шкале UTC. Началу передач  предшествовало
+согласование шкал  атомного и  всемирного времени.  Дело в  том, что в
+1971 году расхождение между ними  достигло 10 с. Поэтому в  конце 1971
+года  была проведена  специальная коррекция  сигналов точного  времени
+таким  образом,  что  по  шкале  всемирного  координированного времени
+отсчет 1972 год,  январь 1, Оч  Ом Ос соответствовал  моменту атомного
+времени Международного бюро  времени 1972 года,  январь 1, Оч  Ом 10с.
+Было принято за правило, что разность между координированным  временем
+и атомным не должна превышать 0,75-0,9с. Приблизительная величина  UT1
+-UTC определяется заранее и сообщается всем радиостанциям,  передающим
+сигналы времени,  за месяц  вперед. Когда  разность UT1-UTC  достигает
+0,75-0,9с,   Международное   бюро   времени   объявляет   о   введении
+дополнительной секунды (положительной или отрицательной), и шкала  UTC
+смещается точно на одну секунду. Обычно это происходит 31 декабря  или
+30 июня:
+
+положительная секунда начинается в 23ч 59м 60с и кончается в Оч Ом  Ос
+первых суток следующего  месяца; если вводится  отрицательная секунда,
+то  через  секунду  после  23ч  59м 58с  идет  Оч  Ом  Ос  первого дня
+следующего  месяца.  Совсем  недавно произошло  еще  одно  изменение в
+международной шкале атомного времени. Мы уже говорили о том, что в  ее
+формировании участвуют более  90 атомных часов  различных лабораторий.
+Все эти часы серийного изготовления,  по разным причинам они не  могут
+очень  хорошо "держать"  номинальную частоту.  В последние  годы было
+проведено исследование атомных часов и сравнение их с метрологическими
+эталонами.   Оказалось,  что   разность  частоты   серийных  часов   с
+метрологическими эталонами  в среднем  составляет 10-10^-13  с ошибкой
+примерно  ±10^-13.  На   основании  этих  исследований   Международный
+астрономический  союз  рекомендовал 1  января  1977 года  в  Оч Ом  Ос
+всемирного   координированного  времени   изменить  масштаб   атомного
+времени, то  есть изменить  длительность единицы  шкалы ТА!  - атомной
+секунды - на (10±2)*10^-13. Длительность единицы шкалы ТА1 была  таким
+образом подогнана к секунде СИ.
+
+Передаваемые радиостанциями разных стран сигналы точного времени могут
+иметь своей  основой либо  координированное время  Международного бюро
+времени, либо координированное время национальной шкалы.
+
+Национальная  шкала времени  СССР -  это шкала  равномерного атомного
+времени,  в  которой  начало отсчета  совмещено  со  шкалой всемирного
+времени  UT1 в  12 ч  всемирного времени  1 января  1964 года.  Размер
+единицы времени  - секунды,  воспроизводимой Государственным  эталоном
+времени и  частоты СССР,  соответствует определению,  которое принял в
+1967 году Международный комитет мер и весов.
+
+В шкале координированного времени  СССР секунда равна атомной  секунде
+СИ, а счет Времени может меняться на 1с в Оч Ом Ос всемирного  времени
+так, чтобы  расхождение между  шкалами всемирного  и координированного
+времени не превышало 0,75-0,9с. Шкалы координированного времени СССР и
+Международного  бюро  времени  согласованы  с  точностью  выше  Ю-3 с.
+Сигналы  точного  времени,  передаваемые  советскими   радиостанциями,
+формируются  на  основе шкалы  координированного  времени СССР.  Итак,
+проблема  создания  системы счета  времени,  основанной на  стабильном
+природном процессе, решена. Шкала  атомного времени очень стабильна  и
+равномерна. Однако  это вовсе  не означает,  что отпала  надобность во
+всемирном времени. Внедрение в  практику атомных эталонов и  сравнение
+атомного  времени  со   всемирным  дает  возможность   изучать  тонкие
+особенности   вращения   Земли,   еще   не   получившие  геофизической
+интерпретации. Шкала всемирного времени нужна и при работах в космосе,
+для слежения и корректировки  с Земли движения космических  аппаратов.
+Астрономическое  и  атомное  время имеют  свои  области  применения, и
+необходимость  обеих   шкал  подчеркивается   введением  компромиссной
+системы   передач   сигналов  координированного   времени   по  радио,
+удовлетворяющей  потребности,  как в  астрономическом,  так и  атомном
+времени. 
+
+
+
+http://www.time.gov
+
+NIST Time and Frequency Services
+
+Since  1923,  NIST  radio station  WWV  has  provided  round-the-clock
+shortwave broadcasts of time and frequency signals. WWV's audio signal
+is also offered  by telephone: dial  (303) 499-7111  (not  toll-free).
+A sister  station, WWVH,  was  established in 1948 in Hawaii,  and its
+signal can be heard by dialing (808)  335 -4363 in Hawaii. 
+
+Broadcast frequencies  are  2.5 MHz  (megahertz), 5 MHz,   10 MHz, and
+15 MHz for both  stations, plus 20 MHz   on WWV. The  signal  includes
+UTC time in  both voice and coded form;  standard carrier frequencies,
+time intervals and  audio tones; information about Atlantic or Pacific
+storms;  geophysical   alert  data   related   to   radio  propagation
+conditions; and other public service announcements. Accuracies of  one
+millisecond  (one  thousandth  of  a  second)  can  be  obtained  from
+these broadcasts if  one corrects for  the distance from  the stations
+(near Ft. Collins,  Colorado, and  Kauai,  Hawaii)  to the   receiver.
+The    telephone   services   provide   time   signals   accurate   to
+30 milliseconds   or  better, which  is  the  maximum  delay  in cross
+-country telephone lines.
+
+In 1956,  low-frequency station  WWVB,  which  offers greater accuracy
+than   WWV  or  WWVH,   began  broadcasting   at  60 kilohertz.    The
+broadcast  power  for  WWVB  was increased   in 1999   from about   10
+kilowatts  to 50  kilowatts, providing  much improved signal  strength
+and  coverage  to  most of  the North   American continent.  This has
+stimulated  commercial  development  of a  wide  range  of inexpensive
+radio -controlled clocks and watches for general consumer use. 
+
+Time  signals are  an important  byproduct of  the Global  Positioning
+System   (GPS),  and indeed  this  has  become  the  premier satellite
+source for time signals.  The  time scale operated by the  USNO serves
+as reference for GPS, but it is important to note that the time scales
+of  NIST and  USNO are highly  coordinated (that  is,  synchronized to
+well within  100 nanoseconds,  or 100 billionths  of a second).  Thus,
+signals provided by either NIST or USNO can be considered as traceable
+to  both  institutions.   The agreements   and  coordination   of time
+between these two institutions  are important  to the  country,  since
+they  simplify   the  process  of  achieving  legal  traceability when
+regulations require it. 
+
+
+ The  NIST Internet  Time Service  (ITS) allows  users to  synchronize
+ computer clocks  via the   Internet. The  time information   provided
+ by   the service   is directly  traceable to  UTC(NIST). The  service
+ responds  to time  requests from  any Internet   client  in   several
+ formats including  the  DAYTIME,  TIME,  and NTP protocols.
+
+The  NIST  Internet   Time  Service  uses   multiple  stratum-1   time
+servers. Here are the server names, locations, and IP addresses.
+
+Internet time  code protocols  are defined  by a  series of  documents
+called Request for  Comments, or RFCs.  These documents are  available
+on-line from several  sites  on the Internet. The  protocols supported
+by the NIST Internet Time Service are:
+
+Network Time Protocol (RFC-1305)
+
+The   Network  Time   Protocol  (NTP)  is  the   most  commonly   used
+Internet   time  protocol,  and  the   one  that  provides   the  best
+performance.   Large  computers  and  workstations  often  include NTP
+software  with  their  operating  systems.  The  client  software runs
+continuously as  a  background  task that  periodically gets   updates
+from one  or  more  servers. The   client software  ignores  responses
+from servers that appear to be  sending the wrong time,  and  averages
+the results  from those that appear to be correct.
+
+Many of  the available  NTP software   clients for  personal computers
+don’t do   any averaging  at all.  Instead, they  make a single timing
+request to a signal  server (just  like a Daytime or Time client)  and
+then use this information to set  their computer’s  clock. The  proper
+name   for  this   type  of   client  is   SNTP  (Simple  Network Time
+Protocol).
+
+The NIST servers listen for a NTP request on port 123, and respond  by
+sending   a  udp/ip  data   packet   in the   NTP   format.  The  data
+packet  includes   a 64-bit  timestamp  containing  the  time  in  UTC
+seconds  since January  1, 1900  with a resolution of 200 ps.
+
+Daytime Protocol (RFC-867)
+
+This  protocol is   widely used  by  small  computers running   MS-DOS
+and  similar operating systems. The  server  listens on port 13,   and
+responds  to  requests   in  either  tcp/ip  or  udp/ip  formats.  The
+standard does not specify an exact  format for the  Daytime  Protocol,
+but requires  that the  time is  sent using standard ASCII characters.
+NIST chose a time code  format similar to the one used by  its dial-up
+Automated Computer Time Service (ACTS), as shown below:
+
+JJJJJ YR-MO-DA HH:MM:SS TT L H msADV UTC(NIST) OTM
+
+where:
+
+JJJJJ is  the Modified  Julian Date  (MJD). The  MJD is  the last five
+digits of  the Julian Date, which  is simply a count of the  number of
+days  since January  1, 4713  B.C. To  get the  Julian Date,  add 2.4
+million to the MJD.
+
+YR-MO-DA is the date. It shows  the  last two digits of the  year, the
+month, and the current day of month.
+
+HH:MM:SS  is the  time in  hours, minutes,  and seconds.  The time  is
+always sent  as Coordinated Universal  Time (UTC). An offset needs  to
+be applied to UTC to obtain local time. For example, Mountain Time  in
+the U.  S. is  7 hours  behind UTC  during Standard  Time, and 6 hours
+behind UTC during Daylight Saving Time.
+
+TT is a two  digit code (00 to  99) that indicates whether  the United
+States is  on Standard  Time (ST)  or Daylight  Saving  Time (DST). It
+also indicates when  ST or DST is approaching. This code is set to  00
+when ST is  in effect, or  to  50 when  DST is in   effect. During the
+month in which   the time change   actually occurs, this   number will
+decrement every  day until   the change  occurs. For   example, during
+the month of October, the U.S.  changes from DST to ST. On  October 1,
+the number will change from 50 to the  actual number of days until the
+time   change. It  will decrement  by 1   every day  until the  change
+occurs at  2 a.m.  local  time  when the  value is  1.  Likewise,  the
+spring change is  at 2 a.m. local time  when the value reaches 51.
+
+L is  a one-digit  code  that  indicates whether  a leap   second will
+be added or  subtracted at midnight  on the last  day  of the  current
+month. If the code   is 0, no leap  second will occur this  month.  If
+the code is 1,  a positive  leap second  will be added at  the  end of
+the month. This  means that the last minute  of the month will contain
+61 seconds instead of 60. If the code is 2, a second will  be  deleted
+on the last day  of the month. Leap  seconds occur at a  rate of about
+one per year. They are used to correct for irregularity in the earth's
+rotation. The correction is made  just before midnight UTC (not  local
+time).
+
+H is a health digit that  indicates the health of the server.  If H=0,
+the   server  is  healthly.  If H=1,  then  the  server   is operating
+properly but its time may  be in error by up to 5 seconds. This  state
+should change  to fully  healthy within  10 minutes.  If H=2, then the
+server is operating  properly but its  time is known   to be wrong  by
+more than 5 seconds. If H=4,  then a hardware or software failure  has
+occurred and the amount of the time error is unknown.
+
+msADV displays  the number   of milliseconds  that NIST   advances the
+time code  to partially  compensate for  network delays.  The  advance
+is currently  set to 50.0 milliseconds.
+
+The label  UTC(NIST) is  contained in   every time  code. It indicates
+that  you are receiving  Coordinated  Universal  Time (UTC)  from  the
+National Institute  of Standards and Technology (NIST).
+
+OTM (on-time marker) is an asterisk (*).  The time values sent by  the
+time  code refer to the arrival  time of the OTM.  In other  words, if
+the time code says  it is 12:45:45, this means it is 12:45:45 when the
+OTM arrives. 
+
+Time Protocol (RFC-868)
+
+This simple protocol is now used by only about 1% of ITS customers. It
+returns a 32-bit unformatted  binary number that  represents  the time
+in UTC  seconds  since January 1,  1900. The server  listens  for Time
+Protocol requests  on port   37, and  responds  in  either  tcp/ip  or
+udp/ip  formats.  Conversion  to  local  time  (if  necessary) is  the
+responsibility of  the client  program. The  32-bit binary  format can
+represent  times over  a span  of about  136 years  with a  resolution
+of  1 second.  There is  no  provision for  increasing  the resolution
+or increasing the range of years.
+
+The  strength of  the time  protocol  is  its simplicity.  Since many
+computers   keep time  internally  as  the  number  of  seconds  since
+January 1,  1970 (or  another date), converting the received  time  to
+the necessary  format is often a  simple matter of binary  arithmetic.
+However,  the format does not allow  any additional information to  be
+transmitted,  such   as  advance  notification  of  leap   seconds  or
+daylight saving time, or information about the health of the server.
+
+
+Why is UTC used as the acronym for Coordinated Universal Time  instead
+of CUT?
+
+In 1970  the  Coordinated  Universal Time   system was  devised  by an
+international  advisory  group   of  technical   experts   within  the
+International  Telecommunication Union (ITU). The ITU felt it was best
+to designate a single abbreviation  for use in all languages  in order
+to minimize confusion. Since unanimous agreement could not be achieved
+on  using either  the English  word order,  CUT, or  the French   word
+order, TUC, the acronym UTC was chosen as a compromise.
+
+
+What  time  does  NIST  distribute  through  its  time  and  frequency
+services?
+
+NIST  provides   UTC(NIST),  a   time   scale   referenced  to  atomic
+oscillators  located in Boulder, Colorado. At its source, UTC(NIST) is
+kept  in  as close  agreement   as possible  with  other national  and
+international  standards,  typically  within  a  few  nanoseconds. The
+current difference between UTC and UTC(NIST) is shown here.
+
+The accuracy of the time sent to user depends upon the service used to
+transfer time, and the receiving equipment that  is used. The simplest
+services may  have uncertainties as large as 1 second, but still  meet
+the needs of most users.   For example,  to  see  the   current   time
+displayed  in  your  browser,   see  the http://nist.time.gov site. 
+
+
+How is Coordinated Universal Time (UTC) currently calculated?
+
+There are two ways to  think  about Coordinated Universal Time  (UTC).
+The  way it is usually thought  of by most  people is as  an indicator
+of  time-of-day (hours, minutes, and  seconds). For  example, a   wall
+clock  can display   UTC in  hours,  minutes, and seconds.  The second
+way is to think of UTC as a stable frequency or rate which is used  to
+count seconds. These  seconds are then  accumulated to  form  minutes,
+hours, days, and years.  Let's take a brief  look at UTC as  a measure
+of both time-of-day and frequency.
+
+When you  use UTC  for time-of-day,  keep  in  mind that  it refers to
+local  time at the zero meridian which is near Greenwich, England. The
+UTC minutes and  seconds are  exactly the  same as  your local   time,
+but  the hours   are different.  The  difference in hours  between UTC
+and your  local time  depends upon  your time  zone. For example, when
+Boulder, Colorado is on Mountain Standard Time, the difference between
+Boulder time and UTC is 7 hours (its 7 hours later in England than  it
+is in Boulder).  However, UTC does  not observe Daylight  Saving Time,
+and  never   adds  or subtracts  an   hour.  Therefore, when   Boulder
+switches from   Mountain Standard  Time  to  Mountain  Daylight  Time,
+the difference  between local  time and  UTC becomes just 6 hours.  To
+get local  time from a UTC  broadcast, both a  time zone and  daylight
+saving time correction  usually needs to  be made. Fortunately,  these
+corrections are made automatically by the radio receivers and software
+packages that access NIST services  after you configure them for  your
+time zone.
+
+The frequency or rate of  UTC is computed by the  International Bureau
+of  Weights and Measures (BIPM)  located near Paris, France. The  BIPM
+uses a  weighted average  from  about  250  atomic  clocks  located in
+about 50  national  laboratories  to construct   a time  scale  called
+International Atomic   Time (TAI).   Once TAI   is corrected  for leap
+seconds,  it  becomes UTC,  or  the  official world  time  scale. NIST
+distributes  a real   time version  of  UTC  called UTC(NIST)   to the
+public through its time and frequency services. 
+
+
+Why must time be measured so precisely?
+
+Precise  time   synchronization  has  many  uses   in  everyday  life.
+Synchronization between two  or more locations  is necessary for  high
+speed   communication   systems,   synchronizing    television  feeds,
+calculating bank  transfers, and  transmitting everything  from  email
+to sonar  signals in  a submarine.  Power companies  use precise  time
+to regulate power  system  grids and  reduce power losses.  Radio  and
+television stations require both precise  time-of-day and frequency in
+order  to broadcast programs.
+
+Precise  time    measurements  are    also  essential    for  accurate
+navigation and the support of  communications on earth  and in  space.
+Scientific  organizations   such  as  NASA  depend  on  reliable   and
+consistent time measurement for projects such  as interplanetary space
+travel. Fractional  disparities in   times between  a space  probe and
+tracking  stations on Earth  can dramatically affect  the positions of
+spacecraft. Precise  time measurements  are also  essential to   radio
+navigation  systems  like  the  Global  Positioning  System  (GPS). By
+synchronizing the satellite clocks  within nanoseconds of each  other,
+it makes it  possible for a  receiver  to know  its position on  earth
+within a few meters.
+
+
+Why are Cesium atomic clocks used?
+
+Since 1967,  the International  System of  Units (SI)  has defined the
+second as the period equal  to 9,192,631,770 cycles  of the  radiation
+which corresponds  to the transition between two energy levels of  the
+ground state of the Cesium-133 atom. This definition makes the  cesium
+oscillator (sometimes refered to  generically as an atomic  clock) the
+primary standard for time  and frequency measurements. Other  physical
+quantities, like the  volt and meter,  also rely on  the definition of
+the second as part of their own definitions. 
+
+Atomic  clocks are  quite complex,  but the  basic theory  is  simple.
+Like all clocks, they  are  intended  to make  the same   event happen
+over and   over. The  repetition of  this event  produces a frequency,
+which  is intended  to be  as stable  as possible.  For example,   the
+pendulum in a   grandfather clock swings  back  and forth  at the same
+rate, over and over.  The swings of the  pendulum are counted to  keep
+time.  In a  cesium oscillator,  the transitions  of the  cesium  atom
+as it moves back and  forth between two  energy levels are  counted to
+keep  time. The  best  cesium  oscillators   (such  as  NIST-F1)   can
+produce  frequency   with an  uncertainty of  about 1   x 10-15, which
+translates  to a time error  of about 0.1 nanoseconds per day.
+
+
+What is the current Coordinated Universal Time?
+
+NIST and the  U.S. Naval Observatory  jointly operate a  web site that
+provides the Official U.S. Time at http://www.time.gov. Readings  from
+the clocks  of these  two agencies  contribute to  world time,  called
+Coordinated Universal Time (UTC). 
+
+NIST  offers  several  alternatives   for   accessing  NIST  time   by
+telephone.  To hear the same WWV time announcements by  phone that you
+would hear using  a shortwave radio, call (303) 499-7111.  This is not
+a  toll-free call,  except in  the  local Boulder/Denver,  CO,   area.
+Your  call  will  be   automatically  cut  off after  approximately  3
+minutes. To  hear  the similar  WWVH  time announcements  from Hawaii,
+call (808) 335-4363. 
+
+
+----------------------------------------------------------------------
+
+Полезные ссылки :
+
+http://www.time.gov/ - официальное время США
+
+http://toi.iriti.cnr.it/uk/tssworld.html - Time Sites  and Services in
+					   the World
+
+----------------------------------------------------------------------
+
+Программы для синхронизации времени :
+
+
+Neutron
+
+Neutron is  a very  simple and  small time  synchronizing program that
+retrieves  the  accurate time  from  one of  several  specialized time
+servers on the Internet. Once the network time has been retrieved  the
+program can set your computer's clock to match it.
+
+http://keir.net/
+
+
+
+WebTimeSync
+
+connects to one of the NIST  time servers to get the current  time for
+your system.    Version 3.3  adds Update  on System  startup and  quit
+options (for those using  broadband or LAN connections),  updated help
+files, as well as a  few stability updates and code  streamlining.  It
+is  very  small  (around  400K).   It  is  freeware,  and  is   freely
+distributable  as  long  as  you  adhere  to  the  license   agreement
+(license.txt).  This  program requires  the Visual  Basic 6.0 runtimes
+(MSVBVM60.DLL) to install.
+
+http://victech.hypermart.net
+
+
+AnalogX TimeSync
+
+Freeware NTP client
+
+http://www.analogx.com (down)
+
+SP Dialer
+
+Shareware dialer, один из лучших.  Включает в себя функции NTP-клиента, modem sharing, 
+статистику соединений с подсчетом стоимости, напоминания. 
+
+http://www.spdialer.com

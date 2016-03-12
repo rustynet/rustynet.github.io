@@ -1,0 +1,2 @@
+0040:0000  F8 03 F8 02 E8 03 E8 02-BC 03 78 03 78 02 C0 9F
+		   com1  com2  com3  com4  lpt1  lpt2  lpt3

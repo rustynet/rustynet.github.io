@@ -1,0 +1,56 @@
+#include "main.h"
+MAINICON ICON DISCARDABLE "res/main.ico"
+ONICON ICON DISCARDABLE "res/on.ico"
+OFFICON ICON DISCARDABLE "res/main.ico"
+MAINMENU MENUEX
+BEGIN
+  POPUP "&Main"
+  BEGIN
+    MENUITEM "A&bout",CM_ABOUT
+    MENUITEM SEPARATOR
+    MENUITEM "O&n",CM_POWER_ON
+    MENUITEM "O&ff",CM_POWER_OFF
+#ifdef PRO     
+    POPUP "Switch Data Bit"
+    BEGIN
+        MENUITEM "&All Bits",CM_DBIT+0x10
+        MENUITEM SEPARATOR        
+        MENUITEM "Bit &0",CM_DBIT+0
+        MENUITEM "Bit &1",CM_DBIT+1
+        MENUITEM "Bit &2",CM_DBIT+2
+        MENUITEM "Bit &3",CM_DBIT+3
+        MENUITEM "Bit &4",CM_DBIT+4
+        MENUITEM "Bit &5",CM_DBIT+5
+        MENUITEM "Bit &6",CM_DBIT+6
+        MENUITEM "Bit &7",CM_DBIT+7
+    END
+#endif    
+    
+#ifdef PRO     
+    MENUITEM SEPARATOR
+    POPUP "Default &Address"
+    BEGIN
+        MENUITEM "0x&378",CM_ADD_378
+        MENUITEM "0x&278",CM_ADD_278
+        MENUITEM "0x3&BC",CM_ADD_3BC 
+    END
+    POPUP "On/Off Switching &Mask"
+    BEGIN
+        MENUITEM "&Check All Bits",CM_BIT+0x10
+        MENUITEM "&Uncheck All Bits (no default action)",CM_BIT+0x11
+        MENUITEM SEPARATOR
+        MENUITEM "Bit &0",CM_BIT+0
+        MENUITEM "Bit &1",CM_BIT+1
+        MENUITEM "Bit &2",CM_BIT+2
+        MENUITEM "Bit &3",CM_BIT+3
+        MENUITEM "Bit &4",CM_BIT+4
+        MENUITEM "Bit &5",CM_BIT+5
+        MENUITEM "Bit &6",CM_BIT+6
+        MENUITEM "Bit &7",CM_BIT+7
+    END
+#endif    
+    MENUITEM SEPARATOR
+    MENUITEM "E&xit",CM_EXIT
+  END
+END
+

@@ -1,0 +1,32 @@
+# Project: wzcs
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = wzcs_private.res
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -L"D:/prog/Dev-Cpp/lib" -mwindows -Wl, -fno-rtti -fno-exceptions -s 
+INCS =  -I"D:/prog/Dev-Cpp/include" 
+CXXINCS =  -I"D:/prog/Dev-Cpp/include/c++"  -I"D:/prog/Dev-Cpp/include/c++/mingw32"  -I"D:/prog/Dev-Cpp/include/c++/backward"  -I"D:/prog/Dev-Cpp/include" 
+BIN  = wzcs.exe
+CXXFLAGS = $(CXXINCS)-Wl, -fno-rtti -fno-exceptions -s  
+CFLAGS = $(INCS)-Wl, -fno-rtti -fno-exceptions -s  
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before wzcs.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "wzcs.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+wzcs_private.res: wzcs_private.rc wzcs.rc 
+	$(WINDRES) -i wzcs_private.rc -I rc -o wzcs_private.res -O coff 

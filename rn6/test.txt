@@ -1,0 +1,1030 @@
+ райн€€ жесть тестового доступа
+by ALiEN Assault
+
+
+    “естовый  dial-up  доступ  предоставл€ют  многие  провайдеры,  и  это,  как
+правило, обозначено на сайте ISP.
+
+    —  помощью  тестового доступа можно, к примеру, организовать бесплатный IRC
+(да любой сервис, в принципе) - кто-то поднимает у себ€ сервер, а посв€щенные в
+это  могут  его  обнаружить,  просканировав  доступный  диапазон  IP-адресов на
+предмет конкретного порта.
+
+    »ногда  можно  и  просто  поисследовать  вышеупом€нутый диапазон на предмет
+различных интересностей.
+
+    ¬  случае  одного  конкретного  провайдера  таким образом было обнаружено 5
+хостов, на которых имелись:
+
+анонимный FTP с антивирусами
+NNTP (требующий авторизации) 
+Squid (грамотно настроенный, а то вс€ тестовость доступа пропала бы =)
+DNS
+
+и самое любопытное - один из хостов на порту 23 отозвалс€ вот как:
+
+Welcome to Quidway A8010 Expert Multiservice Access Switch
+Copyright (C) 2000-2004 Huawei Technologies Co., Ltd.
+
+Moscow Transtelecom corp
+MoscowM9
+
+User Access Verification
+
+    ќчень  даже  зан€тный  оказалс€ девайс. ¬ результате сбора информации о нем
+вы€снилось,   что  в  –оссии  его  пользуют  всего  3  конторы.  ¬  официальной
+документации   говоритс€,  что  "Quidway  A8010  Expert  ...  пpедназначен  дл€
+постpоени€ на его основе кpупных и надежных сетей VoIP или сетей коммутиpуемого
+доступа...
+
+    ...¬   качестве   аппаpатных  сpедств  Quidway  A8010  Expert  используетс€
+шиpокополосна€   платфоpма  доступа,  а  в  качестве  пpогpаммного  обеспечени€
+используетс€  система  VRP (Versatile Routing Platform, ”нивеpсальна€ платфоpма
+маpшpутизации).  ѕpи  помощи  высокоскоpостной  шины  объединительной  платы  и
+специальной платы обpаботки маpшpутов, обеспечивающих высокоскоpостную пеpедачу
+сообщений,   система   Expert  пpедоставл€ет  следующие  pазнообpазные  услуги:
+коммутиpуемый  доступ (включа€ использование модема, ISDN и WAP), пеpедача pечи
+повеpх  IP  (VoIP), пеpедача факсов по IP-сети (FoIP), виpтуальна€ частна€ сеть
+(VPN),  оптова€ пpодажа поpтов, доступ по аpендованным лини€м, обpатный вызов и
+некотоpые дpугие IP-услуги...
+
+...¬ качестве шлюза VoIP система Expert поддеpживает пpотоколы H.323 и SIP...
+
+    *  ƒл€ св€зи с PSTN поддеpживаютс€ интеpфейсы E1/T1, SDH 155M.
+    *  ѕоддеpживаютс€ следующие интеpфейсы WAN: 10/100 Base-T Ethernet, GE, ATM
+повеpх OC3, ATM повеpх E3, POS OC3, FR повеpх E1/ T1, FR повеpх V.35
+
+ѕоддеpживаемые пpотоколы
+  * IP-пpотокол (RFC0791), ARP (RFC0826) RARP (RFC0903), ICMP (RFC0792)
+  * TCP (RFC0793), UDP (RFC0768)
+  * PPP (RFC1661), MP (RFC1990), CHAP (RFC1994), PAP
+  * (RFC1334), IPCP (RFC1332), MMP
+  * RADIUS (RFC2138), L2TP (RFC2661), Rlogin (RFC1282), PPTP, IPsec
+  * SNMP (RFC1157), Telnet (RFC0854), DNS (RFC1034, RFC1035)
+  * TFTP (RFC1350), FTP (RFC0959), HTTP (RFC2068)
+  * RIP, RIP2, OSPF (RFC1247), маpшpутизаци€ согласно адpесу отпpавител€
+  * V.22, V.22bit, V.17, V.29, V.27ter, V.32, V.32bis, V.34, V.34bis, V.42, V.90,
+    V.92, V.110, V.120 "
+
+   » всЄ это укомплектовано аппаратным файрволлом. ¬от така€ коробочка. 
+
+    ‘ото девайса можно посмотреть в /img/quidway.jpg, 
+    а  ниже  - немного его личной истории, как-то так неаккуратно просочившейс€
+(правда, картинки потер€лись по дороге):
+ 
+===============================================================
+Documentation Center
+Research Management Dept.
+Huawei Technologies Co., Ltd.   
+
+Product Version   
+
+Confidential Level 
+GKV200R002  Confidential 
+
+Product Name: Quidway A8010 Expert   
+
+Total Pages: 25  
+ 
+Quidway A8010 Expert GKV200R002 IGK 
+Configuration Manual
+(For internal use only) 
+
+Drafted by:   
+Zhang Peng       
+
+Date:   
+04-13-2002 
+
+Checked by:   
+Gao Liping       
+
+Date:   
+05-10-2002 
+
+Checked by:   
+Yuan Li       
+
+Date:   
+07-11-20002 
+
+Approved by:           
+        
+Huawei Technologies Co., Ltd.
+
+     All Rights Reserved
+ 
+                   
+Revised Record
+Date   
+
+Revised Version   
+
+Descriptions   
+
+Author 
+09-01-2001   
+
+1.00   
+
+First draft has been completed.   
+
+Ma Pengbo 
+04-13-2002   
+
+1.01   
+
+Add GK configuration of LINUX platform   
+
+Zhang Peng 
+05-10-2002   
+
+1.02   
+
+    Revise  the  draft  according  to latest BOM list and update the networking
+diagram etc. 
+
+Zhang Peng 
+05-11-2002   
+
+1.03   
+
+Revise document formats and part of descriptions   
+
+Yuan Li 
+06-12-2002   
+
+1.04   
+
+Revise document formats and part of descriptions   
+
+Zhang Peng 
+07-17-2002   
+
+1.05   
+
+    Update  optional  platform  of hardware: SUN T1 and T1125 are replaced with
+T1405. 
+
+Zhang Peng/Yuan Li 
+08-17-2002   
+
+1.06   
+
+Updating the processing capability of GK based Linux platform.   
+
+Man Shijie 
+              
+ 
+Table of Contents
+ 
+List of Tables 
+List of Figures
+ 
+Quidway A8010 Expert GKV200R002 IGK 
+
+      Configuration Manual
+
+Keyword: IP Phone Gateway Gatekeeper
+
+    Abstract:  This  document introduces the networking detail of Quidway A8010
+Expert  GKV200R002  IGK  and describes the configuration principles and typical
+configuration of Quidway A8010 Expert GKV200R002 IGK.
+
+    Document  management:  The  document of Quidway A8010 Expert GKV200R002 IGK
+configuration  manual  was drafted and revised by PDT of IGK product (Version),
+and  was  reviewed  jointly  by  Research  and  Development Department, Bidding
+Office,  Configuration  and  Technical  Support Department. Its first draft was
+provided  at the stage of applying for Pilot and has been updated at least once
+per  quarter. This document has been put into configuration management and will
+be  archived  in  document  center  of  Central  R&D  after  being  approved by
+associated  departments.  The document should also be launched through database
+of   market  technical  documents  platform  and  the  document  recipients  of
+associated  departments  should  be  careful  of  keeping secret and should not
+disperse it at will.
+
+    Document use: Quidway A8010 GKV200R002 IGK Configuration Manual is used for
+internal  only.  Its  main  purpose  is  to guide the telecommunication design,
+business mode, and actual sale behavior of Quidway A8010 Expert GKV200R002 IGK.
+It's  the  technology clarification of Quidway A8010 Expert GK project team for
+market  department.  The  document  has described the components, configuration
+list  and  configuration  principles of Quidway A8010 Expert GKV200R002 IGK and
+described  the  compatibility and limitation of Quidway A8010 Expert GKV200R002
+IGK  and  Quidway  A8010  Expert  product (Quidway A8010 Expert GK includes two
+sub-systems  of  IGK  and  AGK.  GK  represents  IGK  sub-system  by default in
+following.  If  it  represents  AGK  sub-system,  AGK  or  ONLY  system will be
+definitely pointed out.)
+
+  1. System Overview 
+    1. Introduction of Networking Pattern 
+The main networking solutions of Quidway A8010 Expert GK include:
+
+1. Implement carrier-class networking demands through A8010 GK and A8010 Expert.
+
+2. Implement carrier-class networking demands through A8010 GK and A8010 Master.
+
+3. Implement carrier-class networking demands through A8010 GK and A8010
+   MasterPlus.
+
+4. Implement enterprise-level networking demands of IP Phone through A8010 GK
+   and A8010 Refiner.
+
+5. Implement enterprise-level networking demands of IP Phone through A8010 GK
+   and R series routers Gateway.
+
+6. Implement multi-service networking demands of VoIP through A8010 GK and
+   A8010 AGK.
+
+7. Implement multi-level and multi-region networking.
+
+8. Interconnect with Gateway or Gatekeeper of other manufacturers to network.
+
+9. Support the networking where the billing is carried out between carriers.
+
+      1. Implement Carrier-class Networking with Quidway A8010 Expert 
+      
+    Fig.1-1  shows the actual application of using A8010 GK and A8010 Expert to
+network.  A8010  Expert  is  IP  phone Gateway with large capacity and A8010 GK
+connects  to  A8010 Expert Gateway system, which can comprise large capacity IP
+phone network system.
+
+    In  the networking with A8010 Expert, the calling flow of Gateway and A8010
+GK includes H.235 protocol, which makes the system own good security. 
+
+          1. Networking with Quidway A8010 Expert 
+      2. Implement Carrier-class Networking with Quidway A8010 Master
+       
+    Fig.1-2  shows the actual application of using A8010 GK and A8010 Master to
+network. The networking pattern is similar to that of 2.1.1. 
+
+          1. Networking with Quidway A8010 Master          
+      3. Implement Carrier-class Networking with Quidway A8010 MasterPlus 
+      
+    Fig.1-3  shows the networking solution of A8010 GK and A8010 MasterPlus. In
+the  solution, the authentication, authorization and accounting of the user are
+implemented through the interface between Quidway A8010 GW and CallSever. 
+
+          1. Networking with Quidway A8010 MasterPlus 
+      4. Implement Enterprise-level Networking of IP Phone with A8010 Refiner 
+      
+    Fig.1-4  shows the actual application of using Quidway A8010 GK and Quidway
+A8010  Refiner  to  network. Quidway A8010 Refiner is enterprise-level IP phone
+Gateway.  Quidway  A8010  GK  connects  to Quidway A8010 Refiner Gateway system
+through 10/100M network interface to comprise enterprise-level IP phone network
+system. 
+
+          1. Networking with Quidway A8010 Refiner 
+      5. Implement Enterprise-level Networking of IP Phone with R Series
+         Routers Gateway 
+         
+    Fig.1-5  shows  the  networking  solution of Quidway A8010 GK and Quidway R
+series  routers  Gateway,  which  is used to comprise enterprise-level IP phone
+network. Quidway R series routers Gateway includes such serials as R26, R36 and
+R17 etc. 
+
+          1. Implement Enterprise-level Networking of IP Phone with R Series 
+             Routers Gateway 
+      6. Implement Multi-service Networking of VoIP with Quidway A8010 AGK 
+      
+    Fig.1-6 shows the networking solution of Quidway A8010 GK and Quidway A8010
+AGK,   which   can  provide  abundant  VoIP  service  such  as  Phone-to-Phone,
+Phone-to-PC,  PC-to-Phone,  PC-to-PC,  Voice mailbox and call transfer etc. AGK
+registers to GK as Gateway and requests call. 
+
+          1. Networking with Quidway A8010 AGK 
+      7. Implement Multi-level and Multi-region Networking 
+      
+    Quidway A8010 GK supports multi-level and multi-region networking, shown as
+Fig.1-7.  After  lower  level  Gatekeeper obtains the IP address of upper level
+Gatekeeper  through  finding  messages  (GRQ)  via DNS and Gatekeeper, it sends
+upper  level Gatekeeper messages to request to register. Upper level Gatekeeper
+will  authenticate  the  identification of lower level Gatekeeper, so the legal
+lower level Gatekeeper can register successfully and the lower level Gatekeeper
+with  wrong password will be refused. The same level Gatekeepers need no mutual
+registration between them.
+ 
+          1. Multi-level and Multi-region Networking 
+      8. Interconnect with GK/GW of other Manufacturers to Network 
+      
+    A8010  GK can interconnect with other manufacturersТ Gateway or Gatekeeper
+supporting standard H.323 protocol. For example, A8010 GK can interconnect with
+Gateway  or  Gatekeeper  of  Cisco through two patterns. Shown as Fig.1-8, in B
+area,  Cisco Gateway directly is hung down A8010 GK group and is managed by it.
+In  C  area, Cisco Gateway is hung down Cisco Gatekeeper, then Cisco Gatekeeper
+interconnect with upper level A8010 GK group through RAS messages.
+
+    The  interconnection  with Gateway/Gatekeeper of VocalTec is identical with
+the  second  interconnection solution of Cisco. As shown in Fig.1-8, in D area,
+VocalTec  Gateway  is  hung  down  VocalTec  Gatekeeper and VocalTec Gatekeeper
+interconnect with A8010 GK group through RAS messages. To the accomplishment of
+the  manual,  the  latest version of interconnected VT equipment is version 1.5
+issued in 2002. 
+
+In addition, it can interconnect with the equipment of Quintum and Avaya through
+same way. 
+
+          1. Interconnect with Cisco and VocalTec GK/GW 
+      9. Support Billing Networking 
+      
+    Quidway  A8010  GK  can  interconnect  with  other  manufacturersТ IP phone
+equipment  supporting standard H.323 protocol. It can provide detailed bill and
+support  accounting  billing between different carriers to network with billing
+system as billing center.
+
+    Fig.1-9  shows  the  networking  solution  of  accounting  billing  between
+different  carriers,  which  is  supported  by  Huawei  GK. In figure, the left
+network  is  managed by carrier A, applying Huawei GK and Huawei GW to network.
+The  right  network  is  managed  by carrier B, applying the GK and GW of other
+manufacturers to network. The GK and GW of other manufacturers can interconnect
+with  Huawei GK and GW. As top GK, Huawei GK can provide detailed bill so as to
+support the billing between different carriers. 
+
+          1. Huawei GK Supports Billing Networking 
+    2. General Configuration Principles 
+    
+    The  software  and  hardware  configuration of IGK has unnecessary anything
+with   networking.   Workstation   and   software  license  with  corresponding
+configuration  are  selected  according  to number of ports of IP phone to save
+cost  in  the  precondition  of  meeting  the requirements of system processing
+ability and reliability etc.
+
+    When  GK  is  use  to  perform  carrier-class networking, the GK of Solaris
+version  is  applied  commonly.  If  less  than  300  E1,  sun  Netra  T1405 is
+recommended  to  perform  1+1 backup or single equipment configuration. If more
+than  300 E1, Sun Netra T1405 GK group pattern is recommended (N GKs share load
+and they are backup each other.).
+
+    When  GK  is  use  to  perform enterprise level networking, the GK of Linux
+version is applied commonly. If less than 180 E1, xSeries 330 GK is recommended
+to  perform  1+1 backup or single equipment configuration. If more than 180 E1,
+IBM  xSeries 330 GK group pattern is recommended (N GKs share load and they are
+backup each other.).
+
+  2. Hardware Configuration Descriptions 
+Quidway A8010 GK includes two versions: Solaris and Linux version GK.
+
+    The hardware platform of Solaris version GK is Sun Unix workstation or mini
+computer  and  the  commonly  applied  type  is  SUN  Netra T1405. The hardware
+platform  of  Linux  version  GK  is  xSeries  series PC servers of IBM and the
+commonly applied type is IBM xSeries 330.
+    1. Hardware List and Optional Configuration Principles of GK Based on Unix
+       Platform 
+       
+Hardware list of GK based on Unix platform goes as follows:  
+            1. Hardware List of GK Based on Unix Platform 
+Item Number   
+
+Hardware Descriptions 
+06120078   
+
+Workstation-Netra T 1405 single equiement-440MHz-512M-18G-CDROM-PGX32 video
+adapter-English documents 04042025   
+
+Single cable-(D9 female)-( CC8C26AWG(S))-(D25 male)-3m-SUN E450 serial port
+cable 
+ 
+    GK  applies  Sun  series  Unix  workstation that is configured with 10/100M
+network  adapter  and  communicates  with outside through TCP/IP protocol. This
+hardware platform is supplied 220V/110V AC power.
+
+Optional configuration principles:
+
+    1).  When  GK  and  AGK  are  deployed  together  and  both apply SUN T1405
+equipment,  all  SUN  servers  are  put  in  cabinet.  Here,  all  SUN  T  1405
+workstations  are  not  configured  with  monitor,  keyboard and mouth but each
+workstation  requires  configuring  with a serial port cable to install Solaris
+operation system. After the installation of system is completed, the server can
+Telnet via network cable to perform system operation management.
+
+(Note: the GK in this section indicates IGK, not including AGK. AGK indicates
+ ONLY system.).
+
+    2).  When  GK is deployed separately or it networks with other types of GW,
+it  must  not  be  put  in  cabinet. But its configuration is same as that when
+deployed with AGK together.
+
+    The  GK  applying  Sun  Netra T1405 as hardware platform can be used in the
+access of less than 300 E1 as single equipment.
+    2. Hardware List and Optional Configuration Principles of GK Based on Linux
+       Platform 
+Hardware list of GK based on Linux platform goes as follows:  
+            1. Hardware List of GK Based on Linux Platform 
+Item Number   
+
+Hardware Descriptions 
+06110206   
+
+PC server-X330-PIII 1G or above-512M-18.2G-Flopy drive-CDROM-No color 
+monitor-Cabinet pattern-English documents-200W-No keyboard/No mouth 
+06110208   
+
+PC server -X330-PIII 1G or above -512M-2*18.2G- Floppy drive
+-CDROM-RAID-4Lx-15"color monitor-Cabinet pattern-English documents-200W 
+06080231   
+
+Other fittings of computer-Server cascading cable-Customizing X330/Right angle
+connector/0.5m- English documents 
+06080230   
+
+Other fittings of computer -xSeries330 monitor/keyboard/mouse cable-Customizing
+ right angle connector-0.5m- private PC Server monitor/keyboard/mouse  
+ 
+The appearance of IBM xSeries 330 is shown in Fig.2-1. 
+          2. Appearance of GK applying IBM eserver xSeries 330 as hardware
+           Platform 
+    Quidway  A8010  GK,  configured  with  10/100M network adapter, applies IBM
+xSeries  series  PC  servers  and  communicates  with  outside via TCP/IP. This
+hardware platform is supplied 220V/110V AC power.
+
+Optional configuration principles:
+
+    1) When GK and AGK are deployed together and both apply IBM X330 equipment,
+all IBM X330 servers are put in cabinet. Here, all IBM X330 servers regarded as
+GK are not configured with monitor, keyboard and mouth but each server requires
+configuring  with  Уserver  cascading  cableФ to connect other IBM X330 servers
+regarded  as  AGK.  One  of  IBM  X330  servers connects to keyboard, mouse and
+monitor  (The  one-transfer-three  cable  is  provided by ONLY system.) via one
+УxSeries330monitor/keyboard/mouse  cableФ. After the installation is completed,
+the server can Telnet via network cable.
+
+    When  GK  and  AGK are deployed together, the number of configured Уserver
+cascading  cableТ  and УxSeries330 monitor/keyboard/mouse cableФ for GK and
+AGK meets the following formula:
+
+Number of server cascading cable =Total number of IBM X330 server used by GK
+and AGK-1
+
+Number of xSeries330 monitor/keyboard/mouse cable=1
+
+(Note: the GK in this section indicates IGK, not including AGK. AGK indicates
+ ONLY system.).
+
+    2)  When  GK  is deployed separately or it networks with other types of GW,
+each  IBM  X330  server  as  GK should be configured with monitor, keyboard and
+mouse  because of no cabinet. And one УxSeries330 monitor/keyboard/mouse cableФ
+should  be configured to the IBM X330 sever host to connect keyboard, mouse and
+monitor.
+
+    The  GK  applying xSeries330 as hardware platform can be used in the access
+less than 180 E1 and mainly used in enterprise network.
+
+    3. Hardware List and Optional Configuration Principles of Client 
+    
+    GK  system can be managed through web and Telnet command line logging at PC
+clients.  At  the  same time, the UNIX and LINUX system where the GK is located
+can  be managed through Telnet at PC client. One common desktop computer can be
+applied at the PC client. 
+
+            1. Hardware List of Client 
+Item Number   
+
+Hardware Descriptions 
+06100157   
+
+Desktop computer-P4 1.7GHz or above-128M-20G-Flopy drive-CDROM-Integrated network
+adapter- Integrated audio adapter-17ЋЭ color monitor-Chinese Win98 
+
+  3. Software Platform and Software List and Optional Configuration Principles of
+     Third Party 
+     
+    The  GK  of  Unix  version  and  Linux version respectively applies Solaris
+operation system of SUN and Linux operation system of Red Hat.
+
+    1. Software Platform and Optional Configuration Principles of GK Based on Unix
+       Platform 
+       
+    The software platform of IGK workstation is the Solaris operation system of
+SUN  and  the  present  version  is  7.  When  Solaris system is installed, the
+supported  language  can be selected according to demands. In overseas version,
+English  can  be  selected and Chinese can be selected for domestic version. No
+matter  what  language  system  is  installed, both Chinese/English man machine
+interfaces can be supported as logging through WEB or Telnet command line at PC
+client if Chinese operation system is installed at PC client. 
+
+            1. Software List of GK Based on Unix Platform 
+Item Number   
+
+Software 
+05040173   
+
+Tools software-Solaris 7.0 STD SIMP CHINESE SVR 
+05112498   
+
+Terminal physical software-Quidway A8010 GK Basic GK (IGK)-AS3TER11-IP Phone GK
+software (Unix version)-Program 
+88030045   
+
+Charge item-Quidway A8010 GK Basic GK (IGK)-IP phone GK software License(Unix) 
+ 
+The computation method of UNIX GK License:
+
+License =Number of E1supported by GK*30
+
+For example: When GK software is quoted, if a deployment of 50 E1 is implemented,
+the license based on port is 50*30=1500.
+
+    2. Software Platform and Optional Configuration Principles of GK Based on
+       Linux Platform 
+       
+    The software platform of PC server is Red Hat Linux operation system of Red
+Hat and present version is 7.1. The present used Red Hat Linux operation system
+only  supports  English.  If  only  Chinese operation system is installed at PC
+client,  both  Chinese  and  English man machine interfaces can be supported as
+logging through WEB or Telnet command line at PC client. 
+
+            1. Software List of GK Based on Linux Platform 
+Item Number   
+
+Software 
+05040386   
+
+Tools software-English version/Linux/RedHat7.1 
+05112285   
+
+Terminal physical software -Quidway A8010 GK Basic GK (IGK)-AS3TER09-IP Phone GK
+software (Linux version)-Program 
+88030752   
+
+Charge item -Quidway A8010 GK Basic GK (IGK)-IP phone GK software License (Linux) 
+ 
+The computation method of LINUX GK License:
+
+License =Number of E1 supported by GK*30
+
+For example: When GK software is quoted, if a deployment of 50 E1 is implemented,
+the license based on port is 50*30=1500.
+
+    3. Client Software Platform and Software List and Optional Configuration
+       Principles of Third Party 
+No.
+
+  4. Configuration Descriptions of External Cable 
+  
+    There is only common network cable for external cable and every workstation
+carries  one  without  additional  configuration. One terminal of network cable
+connects  network  interface  of  workstation  and  another  one connects to IP
+network through HUB or Lanswitch.
+
+  5. Configuration Descriptions of Delivery Accessories 
+A8010 IP Phone GK User Manual (Optional for Chinese/English)
+
+8010 IP Phone GK Technology Manual (Optional for Chinese/English)
+  6. Configuration Descriptions of Installation Suite 
+  1. System Software List and Optional Configuration Principles of Server Side 
+    
+    The  software is sold as whole and not sold as independent function module.
+The software has been installed as debugging and software 05111493 backup as CD
+as delivery. GK is commonly quoted regarding each IP Phone port as unit.
+
+    2. System Software List and Optional Configuration Principles of Client 
+No.
+  7. Configuration Descriptions of Auxiliary Equipment 
+    1. Configuration List 
+No.
+    2. Configuration Descriptions 
+No.
+8. Expansion and Upgrade Transformation Methods and Configuration Descriptions 
+    1. Expansion Methods and Configuration Descriptions 
+      1. Expansion Methods and Principles 
+IGKV200 design adopts IGK group pattern. When existing IGK group cannot meet
+work demands, one IGK can be added into group to enhance processing ability of
+system.
+ 
+          1. IGK Group Pattern Supports Smooth Expansion of System 
+    Show  as Fig.8-1, IGK-M first obtain static address list of IGK through DNS
+resolution.  The  address  list includes IP addresses of all IGK of same group.
+After  getting  address list, GW send GRQ message to IGK to request the address
+of  active  IGK. The IGK receiving GRQ message should send GCF message with IGK
+list in order according to the present load between IGK. Because DNS resolution
+is  adopted,  only  the DNS configuration files in DNS Server need modifying as
+expanding  system. New IGK can be added through adding IP address of new IGK to
+configuration  files,  without  modification  of GW configuration, to implement
+smooth expansion of system.
+
+    When  the  processing ability of hardware (workstation) meets requirements,
+only  adding  the  number  of  software License can implement expansion. If the
+processing  ability  is not enough, one workstation with same configuration can
+be  considered  to  add to perform distributed processing. Changing hardware is
+not considered commonly.
+
+      2. List of Expansion Equipment 
+No.
+      3. Descriptions of Expandable Parts 
+No.
+      4. Special Notices during Expansion 
+No.
+    2. Upgrade Transformation Methods and Configuration Descriptions 
+      1. Upgrade Transformation Methods 
+No.
+      2. List of Expansion Equipment 
+No.
+      3. Descriptions of Expandable Parts 
+Refer to Upgrade Guide of GKV200R002B11 and GKV200R002B15:
+
+Quidway A8010 Expert GKV200R002B1xD0000y Use Upgrade Guide (x =1 or 5, 
+y =present version number).
+
+  9. Appendix 
+    1. Appendix I Configuration Example 
+    1)  Table  9-1  shows the typical configuration list of IGK less than 100E1
+when  IGK  is  networked  separately or performed carrier-class networking with
+other GW. 
+            1. 50E1 IGK Typical Configuration List 
+    
+
+Item Number   
+
+Descriptions     
+
+Quantity   
+Software     
+
+05112498   
+
+Terminal physical software-Quidway A8010 GK Basic GK (IGK)-AS3TER11-IP Phone GK
+software (Unix version)-Program   
+
+1 
+05040173   
+
+Tools software-Solaris 7.0 STD SIMP CHINESE SVR   
+
+1 
+88030045   
+
+Charge item-Quidway A8010 GK Basic GK (IGK)-IP Phone GK software License(Unix)   
+
+1,500 
+Hardware     
+
+06120078   
+
+Workstation-Netra T 1405 single equipment-440MHz-512M-18G-CDROM-PGX32 video
+adapter-English documentation   
+
+1 
+04042025   
+
+Single cable-(D9 female)-( CC8C26AWG(S))-(D25 male)-3m-SUN E450 serial port
+cable   
+
+1 
+06100157   
+
+    Desktop  computer-P4 1.7GHz or above-128M-20G-Floppy drive-CDROM-Integrated
+network adapter-Integrated audio adapter-17" Color monitor- Chines Win98 
+
+1 (refer to the notes behind table) 
+Suite of documentation   
+
+31130592   
+
+Suite of documentation-Quidway A8010 IP Phone GK (GKV200R002,IGKsub-system,
+V2.20)
+
+Suite of documentation:
+
+Quidway A8010 IP Phone GK User Manual (IGKsub-system,V2.21) ¬Ц 31010878
+
+Quidway A8010 IP Phone GK Technology Manual (IGKsub-system,V2.21) ¬Ц 31020486
+
+Quidway A8010 IP Phone GK Electric Manual -(GKV200R002,IGKsub-system,V2.20)
+ - 31180415   
+
+1 
+ 
+Notes: 
+
+    I.  This  networking  is  single  GK  mode.  If  the  system  requires high
+reliability,  1+1 backup pattern can be adopted, i.e. the configuration pattern
+of Fig.9-2.
+
+    II.  The  desktop  computer  as  PC client can be selected according to the
+requirement  of  the  equipment  buyer.  If there is computer leaving unused in
+equipment room of the equipment buyer, this item can be not configured.
+
+    2)  Table  9-2  shows the typical configuration list of IGK more than 100E1
+when  IGK  is  networked  separately or performed carrier-class networking with
+other GW. 
+
+            2. 200E1 IGK Typical Configuration List 
+    
+
+Item Number   
+
+Descriptions   
+
+Quantity   
+Software   
+
+05112498   
+
+Terminal physical software-Quidway A8010 GK Basic GK (IGK)-AS3TER11-IPPhone GK
+software(Unix version)-Program   
+
+1 
+05040173   
+
+Tools software-Solaris 7.0 STD SIMP CHINESE SVR   
+
+1 
+88030045   
+
+Charge item-Quidway A8010 GK Basic GK (IGK)-IP Phone GK software License (Unix)   
+
+6,000 
+Hardware   
+
+06120078   
+
+Workstation-Netra T 1405 single equipment-440MHz-512M-18G-CDROM-PGX32 video 
+adapter-English documentation   
+
+2 (one active/one backup) 
+04042025   
+
+Single cable-(D9 female)-( CC8C26AWG(S))-(D25 male)-3m-SUN E450 serial port
+cable   
+
+2 
+06100157   
+
+Desktop computer-P4 1.7GHz or above-128M-20G-Floppy drive-CDROM-Integrated
+network adapter-Integrated audio adapter-17" Color monitor- Chines Win98   
+
+1 (refer to the notes behind table) 
+Suite of documentation   
+
+31130592   
+
+Suite of documentation-Quidway A8010 IP Phone Gk(GKV200R002,IGKsub-system,V2.20)
+
+Suite of documentation:
+
+Quidway A8010 IP Phone GK User Manual (IGKsub-system,V2.21) ¬Ц 31010878
+
+Quidway A8010 IP Phone GK Technology Manual (IGKsub-system,V2.21) ¬Ц 31020486
+
+Quidway A8010 IP Phone GK Electronic Manual-(GKV200R002,IGKsub-system,V2.20)
+- 31180415   
+
+1 
+ 
+Notes:
+
+    I.  If  active  IGK  group  cannot meet the work demands, the number of SUN
+Netra  T 1405 Workstation can be increased to enhance the processing ability of
+system.
+
+    II.  The  desktop  computer  as  PC client can be selected according to the
+requirement  of  the  equipment  buyer.  If there is computer leaving unused in
+equipment room of the equipment buyer, this item can be not configured.
+
+    3)   When  IGK  and  AGK  are  applied  in  carrier-class  networking,  the
+configuration is identical with table 9-2 except SUN server is put in cabinet.
+
+    4)  Table  9-3 and 9-4 respectively shows the typical configuration list of
+IGK in single GK pattern and in PC platform applying GK group 1+1 backup. 
+
+            3. PC Serer IGK 50E1 Typical Configuration List 
+    
+
+Item Number   
+
+Descriptions     
+
+Quantity   
+Software   
+
+05112285   
+
+Terminal physical software-Quidway A8010 GK Basic GK (IGK)-AS3TER09-IPPhone GK
+software(Linux version)-Program   
+
+1 
+05040386   
+
+Tools software-English version/Linux/RedHat7.1   
+
+1 
+88030752   
+
+Charge item-Quidway A8010 GK Basic GK (IGK)-IP Phone GK software License (Linux)   
+
+1,500 
+Hardware   
+
+06110208   
+
+PC server-X330-PIII 1G or above-512M-2*18.2G-Floppy drive-CDROM-RAID-4Lx-15"
+Color monitor-Cabinet pattern-English documentation-200W   
+
+1 
+06080230   
+
+Other fittings of computer-xSeries330 monitor/keyboard/mouse cable-Customizing
+right angle head-0.5m-PC Server monitor/keyboard/mouse private   
+
+1 
+06100157   
+
+Desktop computer-P4 1.7GHz or above-128M-20G-Floppy drive-CDROM-Integrated
+network adapter-Integrated audio adapter-17" Color monitor- Chines Win98   
+
+1 (refer to the notes behind table) 
+Suite of documentation   
+
+31130592   
+
+Suite of documentation-Quidway A8010 IP Phone Gk(GKV200R002,IGKsub-system,V2.20)
+
+Suite of documentation:
+
+Quidway A8010 IP Phone Gk User Manual (IGKsub-system,V2.21) - 31010878
+
+Quidway A8010 IP Phone Gk Technology Manual (IGKsub-system,V2.21) - 31020486
+
+Quidway A8010 IP Phone Gk Electronic Manual-(GKV200R002,IGKsub-system,V2.20)
+- 31180415   
+
+1 
+ 
+Note:
+
+    I.  The  desktop  computer  as  PC  client can be selected according to the
+requirement  of  the  equipment  buyer.  If there is computer leaving unused in
+equipment room of the equipment buyer, this item can be not configured.
+ 
+            4. PC Server IGK 200E1 Typical Configuration List 
+    
+
+Item Number   
+
+Descriptions     
+
+Quantity   
+Software   
+
+05112285   
+
+Terminal physical software-Quidway A8010 GK Basic GK (IGK)-AS3TER09-IPPhone GK
+software(Linux version)-Program   
+
+1 
+05040386   
+
+Tools software-English version/Linux/RedHat7.1   
+
+1 
+88030752   
+
+Charge item-Quidway A8010 GK Basic GK (IGK)-IP Phone GK software License (Linux)   
+
+6,000 
+Hardware   
+
+06110208   
+
+PC server-X330-PIII 1G or above-512M-2*18.2G-Floppy drive-CDROM-RAID-4Lx-15"
+Color monitor-cabinet pattern-English documentation-200W   
+
+2 (one active/one backup) 
+06080230   
+
+Other fittings of computer -xSeries330 monitor/keyboard/mouse cable-Customizing
+right angle head-0.5m-PC Server monitor/keyboard/mouse private   
+
+2 
+06100157   
+
+Desktop computer-P4 1.7GHz or above-128M-20G-Floppy drive-CDROM-Integrated
+network adapter-Integrated audio adapter-17" Color monitor- Chines Win98   
+
+1 (refer to the notes behind table) 
+Suite of documentation   
+
+31130592   
+
+Suite of documentation-Quidway A8010 IP Phone Gk(GKV200R002,IGKsub-system,V2.20)
+
+Suite of documentation:
+
+Quidway A8010 IP Phone Gk User Manual (IGKsub-system,V2.21) - 31010878
+
+Quidway A8010 IP Phone Gk Technology Manual (IGKsub-system,V2.21) ¬Ц 31020486
+
+Quidway A8010 IP Phone Gk Electronic Manual -(GKV200R002,IGKsub-system,V2.20)
+- 31180415   
+
+1 
+ 
+Note:
+
+    I.  The  desktop  computer  as  PC  client can be selected according to the
+requirement  of  the  equipment  buyer.  If there is computer leaving unused in
+equipment room of the equipment buyer, this item can be not configured.
+
+    5)  Table  9-5  shows  the  typical  configuration list of IGK in single GK
+pattern when IGK and AGK are applied in enterprise level networking. 
+
+            5. PC Server IGK 100E1 Typical Configuration List 
+    
+
+Item Number   
+
+Descriptions     
+
+Quantity   
+Software   
+
+05112285   
+
+Terminal physical software-Quidway A8010 GK Basic GK (IGK)-AS3TER09-IPPhone GK
+software(Linux version)-Program   
+
+1 
+05040386   
+
+Tools software-English version/Linux/RedHat7.1   
+
+1 
+88030752   
+
+Charge item-Quidway A8010 GK Basic GK (IGK)-IP Phone GK software License
+(Linux)   
+
+3,000 
+Hardware   
+
+06110206   
+
+PC server-X330-PIII 1G or above-512M-18.2G-Floppy drive-CDROM-No color 
+monitor-Cabinet pattern-English documentation-200W-No keyboard/No mouse   
+
+1 
+06080231   
+
+Other fittings of computer-Server cascading cable-Customizing X330/right
+angle head/0.5m-English documentation   
+
+1 (refer to the notes behind table) 
+06100157   
+
+Desktop computer-P4 1.7GHz or above-128M-20G-Floppy drive-CDROM-Integrated
+network adapter-Integrated audio adapter-17" Color monitor- Chines Win98   
+
+1 (refer to the notes behind table) 
+Suite of documentation   
+
+31130592   
+
+Suite of documentation-Quidway A8010 IP Phone Gk(GKV200R002,IGKsub-system,
+V2.20)
+
+Suite of documentation:
+
+Quidway A8010 IP Phone Gk User Manual (IGKsub-system,V2.21) - 31010878
+
+Quidway A8010 IP Phone Gk Technology Manual (IGKsub-system,V2.21) - 31020486
+
+Quidway A8010 IP Phone Gk Electronic Manual -(GKV200R002,IGKsub-system,V2.20)
+ - 31180415   
+
+1 
+ 
+Note:
+
+    I.  The  desktop  computer  as  PC  client can be selected according to the
+requirement  of  the  equipment  buyer.  If there is computer leaving unused in
+equipment room of the equipment buyer, this item can be not configured.
+
+    II.  When  GK and AGK are deployed together and both GK and AGK applied IBM
+X330equipment, the required number of configured Уserver cascading cableФ for
+GK and AGK meets the following formula:
+
+Number of server cascading cable =Total number of IBM X330 server used by GK and
+AGK-1
+
+So the configuration of AGK should be referred for the actual required number of
+Уserver cascading cableФ.
+
+    III. У06080230 other fittings of computer-xSeries330 monitor/keyboard/mouse
+cable-customizing   right   angle  head-0.5m-PC  Server  monitor/keyboard/mouse
+privateФ, this Уone-transfer-threeФ cable is provided by ONLY system.
+
+    2. Appendix II Abbreviation 
+English Abbreviation   
+
+English Full Name 
+GK   gatekeeper 
+GW   gateway 
+GM   gateway manager 
+IGK   infrastructure Gatekeeper 
+AGK   Application Gatekeeper 
+ 
+Reference List:
+
+[1] GK Project Team, Quidway A8010 Expert GKV200R002 IGK General Solution, 2000
+
+[2] GK Project Team, Quidway A8010 Expert GKV200R002 IGK Product Specifications,
+ 2000
