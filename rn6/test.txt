@@ -1,27 +1,27 @@
-Крайняя жесть тестового доступа
+РљСЂР°Р№РЅСЏСЏ Р¶РµСЃС‚СЊ С‚РµСЃС‚РѕРІРѕРіРѕ РґРѕСЃС‚СѓРїР°
 by ALiEN Assault
 
 
-    Тестовый  dial-up  доступ  предоставляют  многие  провайдеры,  и  это,  как
-правило, обозначено на сайте ISP.
+    РўРµСЃС‚РѕРІС‹Р№  dial-up  РґРѕСЃС‚СѓРї  РїСЂРµРґРѕСЃС‚Р°РІР»СЏСЋС‚  РјРЅРѕРіРёРµ  РїСЂРѕРІР°Р№РґРµСЂС‹,  Рё  СЌС‚Рѕ,  РєР°Рє
+РїСЂР°РІРёР»Рѕ, РѕР±РѕР·РЅР°С‡РµРЅРѕ РЅР° СЃР°Р№С‚Рµ ISP.
 
-    С  помощью  тестового доступа можно, к примеру, организовать бесплатный IRC
-(да любой сервис, в принципе) - кто-то поднимает у себя сервер, а посвященные в
-это  могут  его  обнаружить,  просканировав  доступный  диапазон  IP-адресов на
-предмет конкретного порта.
+    РЎ  РїРѕРјРѕС‰СЊСЋ  С‚РµСЃС‚РѕРІРѕРіРѕ РґРѕСЃС‚СѓРїР° РјРѕР¶РЅРѕ, Рє РїСЂРёРјРµСЂСѓ, РѕСЂРіР°РЅРёР·РѕРІР°С‚СЊ Р±РµСЃРїР»Р°С‚РЅС‹Р№ IRC
+(РґР° Р»СЋР±РѕР№ СЃРµСЂРІРёСЃ, РІ РїСЂРёРЅС†РёРїРµ) - РєС‚Рѕ-С‚Рѕ РїРѕРґРЅРёРјР°РµС‚ Сѓ СЃРµР±СЏ СЃРµСЂРІРµСЂ, Р° РїРѕСЃРІСЏС‰РµРЅРЅС‹Рµ РІ
+СЌС‚Рѕ  РјРѕРіСѓС‚  РµРіРѕ  РѕР±РЅР°СЂСѓР¶РёС‚СЊ,  РїСЂРѕСЃРєР°РЅРёСЂРѕРІР°РІ  РґРѕСЃС‚СѓРїРЅС‹Р№  РґРёР°РїР°Р·РѕРЅ  IP-Р°РґСЂРµСЃРѕРІ РЅР°
+РїСЂРµРґРјРµС‚ РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ РїРѕСЂС‚Р°.
 
-    Иногда  можно  и  просто  поисследовать  вышеупомянутый диапазон на предмет
-различных интересностей.
+    РРЅРѕРіРґР°  РјРѕР¶РЅРѕ  Рё  РїСЂРѕСЃС‚Рѕ  РїРѕРёСЃСЃР»РµРґРѕРІР°С‚СЊ  РІС‹С€РµСѓРїРѕРјСЏРЅСѓС‚С‹Р№ РґРёР°РїР°Р·РѕРЅ РЅР° РїСЂРµРґРјРµС‚
+СЂР°Р·Р»РёС‡РЅС‹С… РёРЅС‚РµСЂРµСЃРЅРѕСЃС‚РµР№.
 
-    В  случае  одного  конкретного  провайдера  таким образом было обнаружено 5
-хостов, на которых имелись:
+    Р’  СЃР»СѓС‡Р°Рµ  РѕРґРЅРѕРіРѕ  РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ  РїСЂРѕРІР°Р№РґРµСЂР°  С‚Р°РєРёРј РѕР±СЂР°Р·РѕРј Р±С‹Р»Рѕ РѕР±РЅР°СЂСѓР¶РµРЅРѕ 5
+С…РѕСЃС‚РѕРІ, РЅР° РєРѕС‚РѕСЂС‹С… РёРјРµР»РёСЃСЊ:
 
-анонимный FTP с антивирусами
-NNTP (требующий авторизации) 
-Squid (грамотно настроенный, а то вся тестовость доступа пропала бы =)
+Р°РЅРѕРЅРёРјРЅС‹Р№ FTP СЃ Р°РЅС‚РёРІРёСЂСѓСЃР°РјРё
+NNTP (С‚СЂРµР±СѓСЋС‰РёР№ Р°РІС‚РѕСЂРёР·Р°С†РёРё) 
+Squid (РіСЂР°РјРѕС‚РЅРѕ РЅР°СЃС‚СЂРѕРµРЅРЅС‹Р№, Р° С‚Рѕ РІСЃСЏ С‚РµСЃС‚РѕРІРѕСЃС‚СЊ РґРѕСЃС‚СѓРїР° РїСЂРѕРїР°Р»Р° Р±С‹ =)
 DNS
 
-и самое любопытное - один из хостов на порту 23 отозвался вот как:
+Рё СЃР°РјРѕРµ Р»СЋР±РѕРїС‹С‚РЅРѕРµ - РѕРґРёРЅ РёР· С…РѕСЃС‚РѕРІ РЅР° РїРѕСЂС‚Сѓ 23 РѕС‚РѕР·РІР°Р»СЃСЏ РІРѕС‚ РєР°Рє:
 
 Welcome to Quidway A8010 Expert Multiservice Access Switch
 Copyright (C) 2000-2004 Huawei Technologies Co., Ltd.
@@ -31,46 +31,46 @@ MoscowM9
 
 User Access Verification
 
-    Очень  даже  занятный  оказался девайс. В результате сбора информации о нем
-выяснилось,   что  в  России  его  пользуют  всего  3  конторы.  В  официальной
-документации   говорится,  что  "Quidway  A8010  Expert  ...  пpедназначен  для
-постpоения на его основе кpупных и надежных сетей VoIP или сетей коммутиpуемого
-доступа...
+    РћС‡РµРЅСЊ  РґР°Р¶Рµ  Р·Р°РЅСЏС‚РЅС‹Р№  РѕРєР°Р·Р°Р»СЃСЏ РґРµРІР°Р№СЃ. Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ СЃР±РѕСЂР° РёРЅС„РѕСЂРјР°С†РёРё Рѕ РЅРµРј
+РІС‹СЏСЃРЅРёР»РѕСЃСЊ,   С‡С‚Рѕ  РІ  Р РѕСЃСЃРёРё  РµРіРѕ  РїРѕР»СЊР·СѓСЋС‚  РІСЃРµРіРѕ  3  РєРѕРЅС‚РѕСЂС‹.  Р’  РѕС„РёС†РёР°Р»СЊРЅРѕР№
+РґРѕРєСѓРјРµРЅС‚Р°С†РёРё   РіРѕРІРѕСЂРёС‚СЃСЏ,  С‡С‚Рѕ  "Quidway  A8010  Expert  ...  РїpРµРґРЅР°Р·РЅР°С‡РµРЅ  РґР»СЏ
+РїРѕСЃС‚pРѕРµРЅРёСЏ РЅР° РµРіРѕ РѕСЃРЅРѕРІРµ РєpСѓРїРЅС‹С… Рё РЅР°РґРµР¶РЅС‹С… СЃРµС‚РµР№ VoIP РёР»Рё СЃРµС‚РµР№ РєРѕРјРјСѓС‚РёpСѓРµРјРѕРіРѕ
+РґРѕСЃС‚СѓРїР°...
 
-    ...В   качестве   аппаpатных  сpедств  Quidway  A8010  Expert  используется
-шиpокополосная   платфоpма  доступа,  а  в  качестве  пpогpаммного  обеспечения
-используется  система  VRP (Versatile Routing Platform, Унивеpсальная платфоpма
-маpшpутизации).  Пpи  помощи  высокоскоpостной  шины  объединительной  платы  и
-специальной платы обpаботки маpшpутов, обеспечивающих высокоскоpостную пеpедачу
-сообщений,   система   Expert  пpедоставляет  следующие  pазнообpазные  услуги:
-коммутиpуемый  доступ (включая использование модема, ISDN и WAP), пеpедача pечи
-повеpх  IP  (VoIP), пеpедача факсов по IP-сети (FoIP), виpтуальная частная сеть
-(VPN),  оптовая пpодажа поpтов, доступ по аpендованным линиям, обpатный вызов и
-некотоpые дpугие IP-услуги...
+    ...Р’   РєР°С‡РµСЃС‚РІРµ   Р°РїРїР°pР°С‚РЅС‹С…  СЃpРµРґСЃС‚РІ  Quidway  A8010  Expert  РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ
+С€РёpРѕРєРѕРїРѕР»РѕСЃРЅР°СЏ   РїР»Р°С‚С„РѕpРјР°  РґРѕСЃС‚СѓРїР°,  Р°  РІ  РєР°С‡РµСЃС‚РІРµ  РїpРѕРіpР°РјРјРЅРѕРіРѕ  РѕР±РµСЃРїРµС‡РµРЅРёСЏ
+РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ  СЃРёСЃС‚РµРјР°  VRP (Versatile Routing Platform, РЈРЅРёРІРµpСЃР°Р»СЊРЅР°СЏ РїР»Р°С‚С„РѕpРјР°
+РјР°pС€pСѓС‚РёР·Р°С†РёРё).  РџpРё  РїРѕРјРѕС‰Рё  РІС‹СЃРѕРєРѕСЃРєРѕpРѕСЃС‚РЅРѕР№  С€РёРЅС‹  РѕР±СЉРµРґРёРЅРёС‚РµР»СЊРЅРѕР№  РїР»Р°С‚С‹  Рё
+СЃРїРµС†РёР°Р»СЊРЅРѕР№ РїР»Р°С‚С‹ РѕР±pР°Р±РѕС‚РєРё РјР°pС€pСѓС‚РѕРІ, РѕР±РµСЃРїРµС‡РёРІР°СЋС‰РёС… РІС‹СЃРѕРєРѕСЃРєРѕpРѕСЃС‚РЅСѓСЋ РїРµpРµРґР°С‡Сѓ
+СЃРѕРѕР±С‰РµРЅРёР№,   СЃРёСЃС‚РµРјР°   Expert  РїpРµРґРѕСЃС‚Р°РІР»СЏРµС‚  СЃР»РµРґСѓСЋС‰РёРµ  pР°Р·РЅРѕРѕР±pР°Р·РЅС‹Рµ  СѓСЃР»СѓРіРё:
+РєРѕРјРјСѓС‚РёpСѓРµРјС‹Р№  РґРѕСЃС‚СѓРї (РІРєР»СЋС‡Р°СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РјРѕРґРµРјР°, ISDN Рё WAP), РїРµpРµРґР°С‡Р° pРµС‡Рё
+РїРѕРІРµpС…  IP  (VoIP), РїРµpРµРґР°С‡Р° С„Р°РєСЃРѕРІ РїРѕ IP-СЃРµС‚Рё (FoIP), РІРёpС‚СѓР°Р»СЊРЅР°СЏ С‡Р°СЃС‚РЅР°СЏ СЃРµС‚СЊ
+(VPN),  РѕРїС‚РѕРІР°СЏ РїpРѕРґР°Р¶Р° РїРѕpС‚РѕРІ, РґРѕСЃС‚СѓРї РїРѕ Р°pРµРЅРґРѕРІР°РЅРЅС‹Рј Р»РёРЅРёСЏРј, РѕР±pР°С‚РЅС‹Р№ РІС‹Р·РѕРІ Рё
+РЅРµРєРѕС‚РѕpС‹Рµ РґpСѓРіРёРµ IP-СѓСЃР»СѓРіРё...
 
-...В качестве шлюза VoIP система Expert поддеpживает пpотоколы H.323 и SIP...
+...Р’ РєР°С‡РµСЃС‚РІРµ С€Р»СЋР·Р° VoIP СЃРёСЃС‚РµРјР° Expert РїРѕРґРґРµpР¶РёРІР°РµС‚ РїpРѕС‚РѕРєРѕР»С‹ H.323 Рё SIP...
 
-    *  Для связи с PSTN поддеpживаются интеpфейсы E1/T1, SDH 155M.
-    *  Поддеpживаются следующие интеpфейсы WAN: 10/100 Base-T Ethernet, GE, ATM
-повеpх OC3, ATM повеpх E3, POS OC3, FR повеpх E1/ T1, FR повеpх V.35
+    *  Р”Р»СЏ СЃРІСЏР·Рё СЃ PSTN РїРѕРґРґРµpР¶РёРІР°СЋС‚СЃСЏ РёРЅС‚РµpС„РµР№СЃС‹ E1/T1, SDH 155M.
+    *  РџРѕРґРґРµpР¶РёРІР°СЋС‚СЃСЏ СЃР»РµРґСѓСЋС‰РёРµ РёРЅС‚РµpС„РµР№СЃС‹ WAN: 10/100 Base-T Ethernet, GE, ATM
+РїРѕРІРµpС… OC3, ATM РїРѕРІРµpС… E3, POS OC3, FR РїРѕРІРµpС… E1/ T1, FR РїРѕРІРµpС… V.35
 
-Поддеpживаемые пpотоколы
-  * IP-пpотокол (RFC0791), ARP (RFC0826) RARP (RFC0903), ICMP (RFC0792)
+РџРѕРґРґРµpР¶РёРІР°РµРјС‹Рµ РїpРѕС‚РѕРєРѕР»С‹
+  * IP-РїpРѕС‚РѕРєРѕР» (RFC0791), ARP (RFC0826) RARP (RFC0903), ICMP (RFC0792)
   * TCP (RFC0793), UDP (RFC0768)
   * PPP (RFC1661), MP (RFC1990), CHAP (RFC1994), PAP
   * (RFC1334), IPCP (RFC1332), MMP
   * RADIUS (RFC2138), L2TP (RFC2661), Rlogin (RFC1282), PPTP, IPsec
   * SNMP (RFC1157), Telnet (RFC0854), DNS (RFC1034, RFC1035)
   * TFTP (RFC1350), FTP (RFC0959), HTTP (RFC2068)
-  * RIP, RIP2, OSPF (RFC1247), маpшpутизация согласно адpесу отпpавителя
+  * RIP, RIP2, OSPF (RFC1247), РјР°pС€pСѓС‚РёР·Р°С†РёСЏ СЃРѕРіР»Р°СЃРЅРѕ Р°РґpРµСЃСѓ РѕС‚РїpР°РІРёС‚РµР»СЏ
   * V.22, V.22bit, V.17, V.29, V.27ter, V.32, V.32bis, V.34, V.34bis, V.42, V.90,
     V.92, V.110, V.120 "
 
-   И всё это укомплектовано аппаратным файрволлом. Вот такая коробочка. 
+   Р РІСЃС‘ СЌС‚Рѕ СѓРєРѕРјРїР»РµРєС‚РѕРІР°РЅРѕ Р°РїРїР°СЂР°С‚РЅС‹Рј С„Р°Р№СЂРІРѕР»Р»РѕРј. Р’РѕС‚ С‚Р°РєР°СЏ РєРѕСЂРѕР±РѕС‡РєР°. 
 
-    Фото девайса можно посмотреть в /img/quidway.jpg, 
-    а  ниже  - немного его личной истории, как-то так неаккуратно просочившейся
-(правда, картинки потерялись по дороге):
+    Р¤РѕС‚Рѕ РґРµРІР°Р№СЃР° РјРѕР¶РЅРѕ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РІ /img/quidway.jpg, 
+    Р°  РЅРёР¶Рµ  - РЅРµРјРЅРѕРіРѕ РµРіРѕ Р»РёС‡РЅРѕР№ РёСЃС‚РѕСЂРёРё, РєР°Рє-С‚Рѕ С‚Р°Рє РЅРµР°РєРєСѓСЂР°С‚РЅРѕ РїСЂРѕСЃРѕС‡РёРІС€РµР№СЃСЏ
+(РїСЂР°РІРґР°, РєР°СЂС‚РёРЅРєРё РїРѕС‚РµСЂСЏР»РёСЃСЊ РїРѕ РґРѕСЂРѕРіРµ):
  
 ===============================================================
 Documentation Center
@@ -306,7 +306,7 @@ registration between them.
           1. Multi-level and Multi-region Networking 
       8. Interconnect with GK/GW of other Manufacturers to Network 
       
-    A8010  GK can interconnect with other manufacturers’ Gateway or Gatekeeper
+    A8010  GK can interconnect with other manufacturersвЂ™ Gateway or Gatekeeper
 supporting standard H.323 protocol. For example, A8010 GK can interconnect with
 Gateway  or  Gatekeeper  of  Cisco through two patterns. Shown as Fig.1-8, in B
 area,  Cisco Gateway directly is hung down A8010 GK group and is managed by it.
@@ -326,7 +326,7 @@ same way.
           1. Interconnect with Cisco and VocalTec GK/GW 
       9. Support Billing Networking 
       
-    Quidway  A8010  GK  can  interconnect  with  other  manufacturers’ IP phone
+    Quidway  A8010  GK  can  interconnect  with  other  manufacturersвЂ™ IP phone
 equipment  supporting standard H.323 protocol. It can provide detailed bill and
 support  accounting  billing between different carriers to network with billing
 system as billing center.
@@ -441,14 +441,14 @@ Optional configuration principles:
     1) When GK and AGK are deployed together and both apply IBM X330 equipment,
 all IBM X330 servers are put in cabinet. Here, all IBM X330 servers regarded as
 GK are not configured with monitor, keyboard and mouth but each server requires
-configuring  with  “server  cascading  cable” to connect other IBM X330 servers
+configuring  with  вЂњserver  cascading  cableвЂќ to connect other IBM X330 servers
 regarded  as  AGK.  One  of  IBM  X330  servers connects to keyboard, mouse and
 monitor  (The  one-transfer-three  cable  is  provided by ONLY system.) via one
-“xSeries330monitor/keyboard/mouse  cable”. After the installation is completed,
+вЂњxSeries330monitor/keyboard/mouse  cableвЂќ. After the installation is completed,
 the server can Telnet via network cable.
 
-    When  GK  and  AGK are deployed together, the number of configured “server
-cascading  cable’  and “xSeries330 monitor/keyboard/mouse cable” for GK and
+    When  GK  and  AGK are deployed together, the number of configured вЂњserver
+cascading  cableвЂ™  and вЂњxSeries330 monitor/keyboard/mouse cableвЂќ for GK and
 AGK meets the following formula:
 
 Number of server cascading cable =Total number of IBM X330 server used by GK
@@ -461,7 +461,7 @@ Number of xSeries330 monitor/keyboard/mouse cable=1
 
     2)  When  GK  is deployed separately or it networks with other types of GW,
 each  IBM  X330  server  as  GK should be configured with monitor, keyboard and
-mouse  because of no cabinet. And one “xSeries330 monitor/keyboard/mouse cable”
+mouse  because of no cabinet. And one вЂњxSeries330 monitor/keyboard/mouse cableвЂќ
 should  be configured to the IBM X330 sever host to connect keyboard, mouse and
 monitor.
 
@@ -482,7 +482,7 @@ Hardware Descriptions
 06100157   
 
 Desktop computer-P4 1.7GHz or above-128M-20G-Flopy drive-CDROM-Integrated network
-adapter- Integrated audio adapter-17Лќ color monitor-Chinese Win98 
+adapter- Integrated audio adapter-17Р›Сњ color monitor-Chinese Win98 
 
   3. Software Platform and Software List and Optional Configuration Principles of
      Third Party 
@@ -684,9 +684,9 @@ V2.20)
 
 Suite of documentation:
 
-Quidway A8010 IP Phone GK User Manual (IGKsub-system,V2.21) В– 31010878
+Quidway A8010 IP Phone GK User Manual (IGKsub-system,V2.21) Р’вЂ“ 31010878
 
-Quidway A8010 IP Phone GK Technology Manual (IGKsub-system,V2.21) В– 31020486
+Quidway A8010 IP Phone GK Technology Manual (IGKsub-system,V2.21) Р’вЂ“ 31020486
 
 Quidway A8010 IP Phone GK Electric Manual -(GKV200R002,IGKsub-system,V2.20)
  - 31180415   
@@ -761,9 +761,9 @@ Suite of documentation-Quidway A8010 IP Phone Gk(GKV200R002,IGKsub-system,V2.20)
 
 Suite of documentation:
 
-Quidway A8010 IP Phone GK User Manual (IGKsub-system,V2.21) В– 31010878
+Quidway A8010 IP Phone GK User Manual (IGKsub-system,V2.21) Р’вЂ“ 31010878
 
-Quidway A8010 IP Phone GK Technology Manual (IGKsub-system,V2.21) В– 31020486
+Quidway A8010 IP Phone GK Technology Manual (IGKsub-system,V2.21) Р’вЂ“ 31020486
 
 Quidway A8010 IP Phone GK Electronic Manual-(GKV200R002,IGKsub-system,V2.20)
 - 31180415   
@@ -911,7 +911,7 @@ Suite of documentation:
 
 Quidway A8010 IP Phone Gk User Manual (IGKsub-system,V2.21) - 31010878
 
-Quidway A8010 IP Phone Gk Technology Manual (IGKsub-system,V2.21) В– 31020486
+Quidway A8010 IP Phone Gk Technology Manual (IGKsub-system,V2.21) Р’вЂ“ 31020486
 
 Quidway A8010 IP Phone Gk Electronic Manual -(GKV200R002,IGKsub-system,V2.20)
 - 31180415   
@@ -999,18 +999,18 @@ requirement  of  the  equipment  buyer.  If there is computer leaving unused in
 equipment room of the equipment buyer, this item can be not configured.
 
     II.  When  GK and AGK are deployed together and both GK and AGK applied IBM
-X330equipment, the required number of configured “server cascading cable” for
+X330equipment, the required number of configured вЂњserver cascading cableвЂќ for
 GK and AGK meets the following formula:
 
 Number of server cascading cable =Total number of IBM X330 server used by GK and
 AGK-1
 
 So the configuration of AGK should be referred for the actual required number of
-“server cascading cable”.
+вЂњserver cascading cableвЂќ.
 
-    III. “06080230 other fittings of computer-xSeries330 monitor/keyboard/mouse
+    III. вЂњ06080230 other fittings of computer-xSeries330 monitor/keyboard/mouse
 cable-customizing   right   angle  head-0.5m-PC  Server  monitor/keyboard/mouse
-private”, this “one-transfer-three” cable is provided by ONLY system.
+privateвЂќ, this вЂњone-transfer-threeвЂќ cable is provided by ONLY system.
 
     2. Appendix II Abbreviation 
 English Abbreviation   
