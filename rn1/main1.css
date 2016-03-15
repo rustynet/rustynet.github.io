@@ -1,0 +1,26 @@
+body { 
+    margin: 0; /* Убираем отступы */
+    background-image: url(./img/fon_b.jpg);
+}
+header{
+	width: 800px;
+	height: 102px;
+	margin-top: 10px;
+	margin-right: 20%;
+	margin-left: 20%;
+	padding: 10px;
+	/*background-color: #000080;*/
+	border-color: #FF0080;
+	border-style: solid;
+}
+article{
+	width: 800px;
+	background-image: url(./img/body.jpg);
+	margin-top: 10px;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-color: #000080;
+	border-style: solid;
+}
