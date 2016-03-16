@@ -1,0 +1,17 @@
+body{
+	margin: 0;
+}
+header{
+	width: 800px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(./img/fon_b.jpg);
+}
+.layout  {
+	width: 800px; /* Ширина макета */
+	margin: auto; /* Выравнивание по центру */
+}
+.content {
+ 	padding: 10px;
+}
