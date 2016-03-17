@@ -1,17 +1,64 @@
 body{
 	margin: 0;
+	/*background: url(./img/rain.jpg);*/
 }
 header{
 	width: 800px;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url(./img/fon_b.jpg);
+	background: rgba(55,0,117,1);
+	background: -moz-linear-gradient(left, rgba(55,0,117,1) 0%, rgba(55,0,117,1) 14%, rgba(22,81,218,1) 53%, rgba(84,126,242,1) 89%, rgba(155,174,233,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(55,0,117,1)), color-stop(14%, rgba(55,0,117,1)), color-stop(53%, rgba(22,81,218,1)), color-stop(89%, rgba(84,126,242,1)), color-stop(100%, rgba(155,174,233,1)));
+	background: -webkit-linear-gradient(left, rgba(55,0,117,1) 0%, rgba(55,0,117,1) 14%, rgba(22,81,218,1) 53%, rgba(84,126,242,1) 89%, rgba(155,174,233,1) 100%);
+	background: -o-linear-gradient(left, rgba(55,0,117,1) 0%, rgba(55,0,117,1) 14%, rgba(22,81,218,1) 53%, rgba(84,126,242,1) 89%, rgba(155,174,233,1) 100%);
+	background: -ms-linear-gradient(left, rgba(55,0,117,1) 0%, rgba(55,0,117,1) 14%, rgba(22,81,218,1) 53%, rgba(84,126,242,1) 89%, rgba(155,174,233,1) 100%);
+	background: linear-gradient(to right, rgba(55,0,117,1) 0%, rgba(55,0,117,1) 14%, rgba(22,81,218,1) 53%, rgba(84,126,242,1) 89%, rgba(155,174,233,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#370075', endColorstr='#9baee9', GradientType=1 );
+	/*background-image: url(./img/fon_b.jpg);*/
 }
+.semi {
+    /*opacity: 0.5; /* Полупрозрачность элемента */
+   }
 .layout  {
 	width: 800px; /* Ширина макета */
-	margin: auto; /* Выравнивание по центру */
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .content {
  	padding: 10px;
+ 	background-color: grey;
 }
+.menu{
+    /*background-color: grey;*/
+    /*height: 40px;*/
+    width: 800px;
+	margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+nav {
+	display: block;
+    position: relative;
+}
+nav ul {
+	list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+    background: #0101bb;
+    overflow: hidden;
+    padding: 0;
+}
+nav ul li {
+	float: left;
+}
+nav ul li a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    display: block;
+    padding: 10px;
+    border-right: 1px solid #ADC0CE;
+    background: rgba(173, 192, 206, .3);
+    color: #29838C;
+}
+a:hover {background: #ADC0CE}
