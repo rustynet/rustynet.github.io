@@ -30,8 +30,16 @@ a.button:hover, input.button:hover {}
 
 /*--------------------*/
 /*-------------header */
-header {width:960px;height: 130px; position:relative; margin: 0px auto;}
-
+header {
+	width:960px;
+	height: 130px; 
+	position:relative; 
+	margin: 0px auto;
+}
+pre{
+    font: 5px monospace;
+    color: #FFF;
+}
 header #logo {position:absolute; top:40px; left: 30px; width: 100%;}
 
 header #search {position: absolute;top: 60px;right: 20px;	width: 208px;z-index: 15;}
@@ -99,7 +107,7 @@ nav ul li:hover a{color:#ffffff;}
 #sidebar .content .post p{color:#A3A3A3; font-style:italic;}
 
 /*------------footer */ 
-footer {width:960px; margin:0px auto 20px auto; padding:10px 0px; color:#ffffff; text-align:center; background-color:#347E03;
+footer {width:960px; margin:0px auto 20px auto; padding:10px 0px; color:#ffffff; text-align:center; background-color:rgba(3, 97, 126, 0.9);
 -webkit-border-radius: 0px 0px 10px 10px;-moz-border-radius: 0px 0px 10px 10px;-khtml-border-radius: 0px 0px 10px 10px;border-radius: 0px 0px 10px 10px;box-shadow: 0px 20px 40px 0px rgba(255, 255, 255, 0.1) inset, 0px 1px 1px 0px rgba(255, 255, 255, 0.05) inset;}
 footer a{color:#ffffff; text-decoration:underline;}
 footer a:hover{color:#ffffff;}
